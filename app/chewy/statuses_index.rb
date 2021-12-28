@@ -3,20 +3,42 @@
 class StatusesIndex < Chewy::Index
   settings index: { refresh_interval: '15m' }, analysis: {
     tokenizer: {
-      kuromoji_user_dict: {
-        type: 'kuromoji_tokenizer',
-        user_dictionary: 'userdic.txt',
+      sudachi_tokenizer: {
+        type: 'sudachi_tokenizer',
+        discard_punctuation: true,
+        resources_path: '/etc/elasticsearch/sudachi',
+        settings_path: '/etc/elasticsearch/sudachi/sudachi.json',
+      },
+    },
+    filter: {
+      english_stop: {
+        type: 'stop',
+stopwords: '_english_',
+      },
+      english_stemmer: {
+        type: 'stemmer',
+language: 'english',
+      },
+      english_possessive_stemmer: {
+        type: 'stemmer',
+language: 'possessive_english',
       },
     },
     analyzer: {
       content: {
-        type: 'custom',
-        tokenizer: 'kuromoji_user_dict',
+        "char_filter":["icu_normalizer"],
+        "tokenizer": "sudachi_tokenizer",
+        type: "custom",
         filter: %w(
-          kuromoji_baseform
-          kuromoji_stemmer
-          cjk_width
           lowercase
+          cjk_width
+          sudachi_part_of_speech
+          sudachi_ja_stop
+          sudachi_baseform
+          english_possessive_stemmer
+asciifolding
+english_stop
+english_stemmer
         ),
       },
     },
