@@ -124,6 +124,6 @@ class SearchService < BaseService
   end
 
   def parsed_query
-    SearchQueryTransformer.new.apply(SearchQueryParser.new.parse(@query))
+    SearchQueryTransformer.new.apply(SearchQueryParser.new.parse(@query.gsub(/(　)/," ")))
   end
 end
