@@ -36,5 +36,3 @@ jobs:
           context: .
           push: true
           tags: stable-3.2
-          cache-from: type=registry,ref=tootsuite/mastodon:latest
-          cache-to: type=inline
