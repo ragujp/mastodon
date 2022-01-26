@@ -58,7 +58,6 @@ sr-Latn:
       memorialize: Prebaci u in memoriam
       moderation:
         all: Svi
-        silenced: Ućutkani
         suspended: Suspendovani
         title: Moderacija
       moderation_notes: Moderatorske beleške
@@ -218,14 +217,8 @@ sr-Latn:
       title: Postavke sajta
     statuses:
       back_to_account: Nazad na stranu naloga
-      batch:
-        delete: Obriši
-        nsfw_off: NSFW isključen
-        nsfw_on: NSFW uključen
-      failed_to_execute: Neuspelo izvršavanje
       media:
         title: Multimedija
-      no_media: Bez multimedije
       title: Statusi naloga
       with_media: Sa multimedijom
     title: Administracija
@@ -427,7 +420,6 @@ sr-Latn:
     pin_errors:
       limit: Već imate prikačen najveći broj tutova
       ownership: Tuđi tutovi ne mogu da se prikače
-      private: Tutovi koji nisu javni ne mogu da se prikače
       reblog: Podrška ne može da se prikači
     show_more: Prikaži još
     visibilities:

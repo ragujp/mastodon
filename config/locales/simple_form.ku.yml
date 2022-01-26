@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 kmr-TR:
+=======
+ku:
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   simple_form:
     hints:
       account_alias:
@@ -38,5 +42,34 @@ kmr-TR:
       ip_block:
         ip: IP
         severities:
+<<<<<<< HEAD
           no_access: Gihîştinê asteng bike
         severity: Rêbaz
+=======
+          no_access: بلۆککردنی ده‌ستپێگه‌یشتن
+          sign_up_requires_approval: سنووردارکردنی چوونەناو
+        severity: یاسا
+      notification_emails:
+        digest: کورتکردنی ئاگادارییکەن لەیەک ئیمەیل
+        favourite: کەسێک دۆخی تۆی بەدڵ بوو
+        follow: کەسێک دوای تۆ کەوت
+        follow_request: کەسێک داوای کردووە کە بەدوات بکەوێت
+        mention: کەسێک باسی کردووی
+        pending_account: هەژمارەی نوێ پێویستی بە پێداچوونەوەهەیە
+        reblog: کاتێک کەسێک نووسراوەی ئێوە دووبارە توت دەکاتەوە
+        report: گوزارشتی نوێ پێشکەش کراوە
+        trending_tag: کاتێک هاشتاگێکی پێدانەچوو هۆگری فرە بوو، ئیمەیلێک بنێرە
+      tag:
+        listable: ڕیگەبدە ئەم هاشتاگە لە پێرستی هەڵبژاردەی بەکارهێنەران و پەڕەی گەڕان نیشان بدرێت
+        name: هەشتاگ
+        trendable: ڕێگەبدە ئەم هەشتاگە لە نووسراوەی بەرچاوکراو نیسان بدرێت
+        usable: ڕێگەبدە بە توتەکان بۆ بەکارهێنانی ئەم هەشتاگە
+    'no': 'نە'
+    recommended: پێشنیارکراوە
+    required:
+      text: پێویستە
+    title:
+      sessions:
+        webauthn: یەکێک لە کلیلەکانی پاراستن بەکاربهێنە بۆ چوونە ژوورەوە
+    'yes': 'بەڵێ'
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a

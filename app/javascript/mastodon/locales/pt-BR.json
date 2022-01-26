@@ -47,11 +47,22 @@
   "account.unmute": "Dessilenciar @{name}",
   "account.unmute_notifications": "Mostrar notificações de @{name}",
   "account_note.placeholder": "Nota pessoal sobre este perfil aqui",
+<<<<<<< HEAD
+=======
+  "admin.dashboard.retention": "Retenção",
+  "admin.dashboard.retention.average": "Média",
+  "admin.dashboard.retention.cohort": "Mês de inscrição",
+  "admin.dashboard.retention.cohort_size": "Novos usuários",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "alert.rate_limited.message": "Tente novamente após {retry_time, time, medium}.",
   "alert.rate_limited.title": "Tentativas limitadas",
   "alert.unexpected.message": "Ocorreu um erro inesperado.",
   "alert.unexpected.title": "Eita!",
   "announcement.announcement": "Comunicados",
+<<<<<<< HEAD
+=======
+  "attachments_list.unprocessed": "(não processado)",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "autosuggest_hashtag.per_week": "{count} por semana",
   "boost_modal.combo": "Pressione {combo} para pular isso na próxima vez",
   "bundle_column_error.body": "Erro ao carregar este componente.",
@@ -113,6 +124,11 @@
   "confirmations.delete.message": "Você tem certeza de que deseja excluir este toot?",
   "confirmations.delete_list.confirm": "Excluir",
   "confirmations.delete_list.message": "Você tem certeza de que deseja excluir esta lista?",
+<<<<<<< HEAD
+=======
+  "confirmations.discard_edit_media.confirm": "Descartar",
+  "confirmations.discard_edit_media.message": "Há mudanças não salvas na descrição ou pré-visualização da mídia; descartar assim mesmo?",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "confirmations.domain_block.confirm": "Bloquear instância",
   "confirmations.domain_block.message": "Você tem certeza de que deseja bloquear tudo de {domain}? Você não verá mais o conteúdo desta instância em nenhuma linha do tempo pública ou nas suas notificações. Seus seguidores desta instância serão removidos.",
   "confirmations.logout.confirm": "Sair",
@@ -305,7 +321,11 @@
   "notifications.column_settings.favourite": "Favoritos:",
   "notifications.column_settings.filter_bar.advanced": "Mostrar todas as categorias",
   "notifications.column_settings.filter_bar.category": "Barra de filtro rápido das notificações",
+<<<<<<< HEAD
   "notifications.column_settings.filter_bar.show": "Mostrar",
+=======
+  "notifications.column_settings.filter_bar.show_bar": "Mostrar barra de filtro",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "notifications.column_settings.follow": "Seguidores:",
   "notifications.column_settings.follow_request": "Seguidores pendentes:",
   "notifications.column_settings.mention": "Menções:",
@@ -315,7 +335,12 @@
   "notifications.column_settings.show": "Mostrar na coluna",
   "notifications.column_settings.sound": "Tocar som",
   "notifications.column_settings.status": "Novos toots:",
+<<<<<<< HEAD
   "notifications.column_settings.unread_markers.category": "Marcar como não lidas",
+=======
+  "notifications.column_settings.unread_notifications.category": "Notificações não lidas",
+  "notifications.column_settings.unread_notifications.highlight": "Destacar notificações não lidas",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "notifications.filter.all": "Tudo",
   "notifications.filter.boosts": "Boosts",
   "notifications.filter.favourites": "Favoritos",
@@ -339,6 +364,10 @@
   "poll.total_votes": "{count, plural, one {# voto} other {# votos}}",
   "poll.vote": "Votar",
   "poll.voted": "Você votou nesta opção",
+<<<<<<< HEAD
+=======
+  "poll.votes": "{votes, plural, one {# voto} other {# votos}}",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "poll_button.add_poll": "Adicionar enquete",
   "poll_button.remove_poll": "Remover enquete",
   "privacy.change": "Alterar privacidade do toot",
@@ -454,6 +483,7 @@
   "upload_form.video_description": "Descrever para deficientes auditivos ou visuais",
   "upload_modal.analyzing_picture": "Analisando imagem…",
   "upload_modal.apply": "Aplicar",
+  "upload_modal.applying": "Aplicando…",
   "upload_modal.choose_image": "Escolher imagem",
   "upload_modal.description_placeholder": "Um pequeno jabuti xereta viu dez cegonhas felizes",
   "upload_modal.detect_text": "Transcrever imagem",

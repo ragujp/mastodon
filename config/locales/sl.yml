@@ -85,7 +85,6 @@ sl:
       destroyed_msg: Moderirana opomba je uspešno uničena!
     accounts:
       approve: Odobri
-      approve_all: Odobri vse
       are_you_sure: Ali ste prepričani?
       avatar: Podoba
       by_domain: Domena
@@ -129,7 +128,6 @@ sl:
         active: Dejaven
         all: Vse
         pending: Na čakanju
-        silenced: Utišan
         suspended: Suspendiran
         title: Moderiranje
       moderation_notes: Opombe moderiranja
@@ -146,7 +144,6 @@ sl:
       push_subscription_expires: Naročnina PuSH preteče
       redownload: Osveži profil
       reject: Zavrni
-      reject_all: Zavrni vse
       remove_avatar: Odstrani podobo
       remove_header: Odstrani glavo
       resend_confirmation:
@@ -171,7 +168,6 @@ sl:
       statuses: Stanja
       subscribe: Naroči
       suspended: Suspendiran
-      time_in_queue: Čakanje v vrsti %{time}
       title: Računi
       unconfirmed_email: Nepotrjena e-pošta
       undo_silenced: Razveljavi utišanje
@@ -210,28 +206,9 @@ sl:
       updated_msg: Emotikon je uspešno posodobljen!
       upload: Pošlji
     dashboard:
-      backlog: zaostala opravila
-      config: Nastavitve
-      feature_deletions: Brisanje računov
-      feature_invites: Povezave povabil
-      feature_profile_directory: Imenik profilov
-      feature_registrations: Registracije
-      feature_relay: Rele federacije
-      feature_timeline_preview: Predogled časovnice
-      features: Zmožnosti
-      hidden_service: Federacija s skritimi storitvami
-      open_reports: odprte prijave
-      recent_users: Nedavni uporabniki
-      search: Iskanje po celotnem besedilu
-      single_user_mode: Način enega uporabnika
       software: Programska oprema
       space: Uporaba prostora
       title: Nadzorna plošča
-      total_users: skupaj uporabnikov
-      trends: Trendi
-      week_interactions: interakcije ta teden
-      week_users_active: aktivni ta teden
-      week_users_new: uporabniki ta teden
     domain_allows:
       add_new: Dodaj domeno na beli seznam
       created_msg: Domena je bila uspešno dodana na beli seznam
@@ -308,8 +285,11 @@ sl:
         available: Razpoložljivo
         expired: Potekel
       title: Povabila
+<<<<<<< HEAD
     pending_accounts:
       title: (%{count}) računov na čakanju
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
     relays:
       add_new: Dodaj nov rele
       delete: Izbriši
@@ -427,19 +407,11 @@ sl:
       title: Nastavitve strani
     statuses:
       back_to_account: Nazaj na stran računa
-      batch:
-        delete: Izbriši
-        nsfw_off: Označi, da ni občutljivo
-        nsfw_on: Označi, kot občutljivo
-      failed_to_execute: Ni bilo mogoče izvesti
       media:
         title: Mediji
-      no_media: Ni medijev
       no_status_selected: Nobeno stanje ni bilo spremenjeno, ker ni bilo izbrano nobeno
       title: Stanja računa
       with_media: Z mediji
-    tags:
-      title: Ključniki
     title: Upravljanje
     warning_presets:
       add_new: Dodaj novo
@@ -595,24 +567,6 @@ sl:
       other: Nekaj še ni čisto v redu! Spodaj si oglejte %{count} napak
   html_validator:
     invalid_markup: 'vsebuje neveljavno oznako HTML: %{error}'
-  identity_proofs:
-    active: Dejaven
-    authorize: Da, odobri
-    authorize_connection_prompt: Odobrite to kriptografsko povezavo?
-    errors:
-      failed: Kriptografska povezava ni uspela. Poskusite znova od %{provider}.
-      keybase:
-        invalid_token: Žetoni Keybase so algoritem podpisov in morajo biti sestavljeni iz 66 heksadecimalnih znakov
-        verification_failed: Keybase ne prepozna tega žetona kot podpis uporabnika %{kb_username}. Poskusite znova s Keybase-om.
-      wrong_user: Dokler se prijavite kot %{current}, ni mogoče ustvariti dokazila za %{proving}. Prijavite se kot %{proving} in poskusite znova.
-    explanation_html: Tukaj lahko kriptografsko povežete druge identitete, na primer profil Keybase. To omogoča drugim, da vam pošljejo šifrirana sporočila in zaupate vsebino, ki ste jo poslali.
-    i_am_html: Jaz sem %{username} na %{service}.
-    identity: Identiteta
-    inactive: Neaktiven
-    publicize_checkbox: 'In to tutnite:'
-    publicize_toot: 'Dokazano je! Jaz sem %{username} na %{service}: %{url}'
-    status: Stanje preverjanja
-    view_proof: Oglejte si dokaz
   imports:
     modes:
       merge: Združi
@@ -782,7 +736,6 @@ sl:
     edit_profile: Uredi profil
     export: Izvoz podatkov
     featured_tags: Vključeni ključniki
-    identity_proofs: Dokazi o identiteti
     import: Uvozi
     import_and_export: Uvoz in izvoz
     migrate: Selitev računa
@@ -817,7 +770,6 @@ sl:
     pin_errors:
       limit: Pripeli ste največje število tutov
       ownership: Trob nekoga drugega ne more biti pripet
-      private: Nejavnega troba ni mogoče pripeti
       reblog: Spodbuda ne more biti pripeta
     poll:
       total_votes:
@@ -941,10 +893,6 @@ sl:
       subject: Vaš arhiv je pripravljen za prenos
       title: Prevzem arhiva
     warning:
-      explanation:
-        disable: Medtem ko je vaš račun zamrznjen, podatki vašega računa ostanejo nedotaknjeni, vendar ne morete izvajati nobenih dejanj, dokler ga ne odklenete.
-        silence: Medtem ko je vaš račun omejen, bodo na tem strežniku videli vaše tute samo osebe, ki vam že sledijo in morda boste izključeni iz različnih javnih seznamov. Vendar vam lahko še vedno ročno sledijo drugi.
-        suspend: Vaš račun je bil začasno ukinjen, vsi vaši tuti in naložene predstavnostne datoteke so bili nepovratno odstranjeni s tega strežnika in strežnikov, kjer ste imeli sledilce.
       review_server_policies: Preglejte pravilnike strežnika
       subject:
         disable: Vaš račun %{acct} je zamrznjen

@@ -90,7 +90,6 @@ oc:
     accounts:
       add_email_domain_block: Metre lo domeni del corrièl en lista negra
       approve: Aprovar
-      approve_all: O validar tot
       are_you_sure: Sètz segur ?
       avatar: Avatar
       by_domain: Domeni
@@ -137,7 +136,6 @@ oc:
         active: Actius
         all: Totes
         pending: En espèra
-        silenced: Resconduts
         suspended: Suspenduts
         title: Moderacion
       moderation_notes: Nòtas de moderacion
@@ -154,7 +152,6 @@ oc:
       push_subscription_expires: Fin de l’abonament PuSH
       redownload: Actualizar lo perfil
       reject: Regetar
-      reject_all: O regetar tot
       remove_avatar: Supriir l’avatar
       remove_header: Levar la bandièra
       resend_confirmation:
@@ -183,7 +180,6 @@ oc:
       statuses: Estatuts
       subscribe: S’abonar
       suspended: Suspendut
-      time_in_queue: En espèra a la fila %{time}
       title: Comptes
       unconfirmed_email: Adreça pas confirmada
       undo_sensitized: Desmarcar coma sensible
@@ -280,32 +276,17 @@ oc:
       updated_msg: Emoji ben mes a jorn !
       upload: Enviar
     dashboard:
-      authorized_fetch_mode: Mòde recuperacion autorizat
-      backlog: Accions en retard
-      config: Configuracion
-      feature_deletions: Supressions de comptes
-      feature_invites: Ligams convidat
-      feature_profile_directory: Annuari de perfils
-      feature_registrations: Inscripcions
-      feature_relay: Relai de federacion
-      feature_timeline_preview: Apercebut del flux d’actualitats
-      features: Foncionalitats
-      hidden_service: Federacion amb servicis amagats
-      open_reports: Senhalaments dobèrts
-      pending_tags: etiquetas en espèra de validacion
-      pending_users: utilizaires en espèra de validacion
-      recent_users: Utilizaires recents
-      search: Recèrca tèxte complèt
-      single_user_mode: Mòde sol utilizaire
+      active_users: utilizaires actius
+      interactions: interraccions
+      media_storage: Emmagazinatge dels mèdias
+      new_users: utilizaire novèl
+      resolved_reports: senhalament resolguts
       software: Logicial
       space: Utilizacion de l’espaci
       title: Tablèu de bòrd
-      total_users: total dels utilizaires
-      trends: Tendéncias
-      week_interactions: interaccions aquesta setmana
-      week_users_active: actius aquesta setmana
-      week_users_new: utilizaires aquesta setmana
-      whitelist_mode: Mòde lista blanca
+      top_languages: Lengas mai activas
+      top_servers: Servidors mai actius
+      website: Site web
     domain_allows:
       add_new: Plaçar en lista blanca
       created_msg: Lo domeni es corrèctament estat plaçat en lista blanca
@@ -404,8 +385,6 @@ oc:
       new:
         title: Crear una règlas IP novèla
       title: Règlas IP
-    pending_accounts:
-      title: Comptes en espèra (%{count})
     relationships:
       title: "Relacions de %{acct}"
     relays:
@@ -432,9 +411,6 @@ oc:
         notes:
           one: "%{count} nòta"
           other: "%{count} nòtas"
-        reports:
-          one: "%{count} senhalament"
-          other: "%{count} senhalaments"
       action_taken_by: Mesura menada per
       are_you_sure: Es segur ?
       assign_to_self: Me l’assignar
@@ -549,15 +525,9 @@ oc:
       delete: Suprimir lo fichièr enviat
     statuses:
       back_to_account: Tornar a la pagina Compte
-      batch:
-        delete: Suprimir
-        nsfw_off: Marcar coma pas sensible
-        nsfw_on: Marcar coma sensible
       deleted: Suprimits
-      failed_to_execute: Fracàs
       media:
         title: Mèdia
-      no_media: Cap de mèdia
       no_status_selected: Cap d’estatut pas cambiat estant que cap èra pas seleccionat
       title: Estatuts del compte
       with_media: Amb mèdia
@@ -566,18 +536,7 @@ oc:
         action: Gerir las règlas servidor
         message_html: Avètz pas definida cap de règla.
     tags:
-      accounts_today: Utilizacions unicas uèi
-      accounts_week: Utilizacions unicas aquesta setmana
-      last_active: Darrièra activitat
-      most_popular: Mai popularas
-      most_recent: Mai recentas
-      name: Etiqueta
       review: Repassar l’estatut
-      reviewed: Repassadas
-      title: Etiquetas
-      trending_right_now: Actualament en tendéncia
-      unique_uses_today: "%{count} publicacions uèi"
-      unreviewed: Pas repassadas
       updated_msg: Paramètres d’etiquetas corrèctament actualizats
     title: Administracion
     warning_presets:
@@ -593,8 +552,11 @@ oc:
       body: "%{reporter} a senhalat %{target}"
       body_remote: Qualqu’un de %{domain} senhalèt %{target}
       subject: 'Novèl senhalament per %{instance} (#%{id})'
+<<<<<<< HEAD
     new_trending_tag:
       subject: 'Nòva etiqueta per repassar sus %{instance} (#%{name})'
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   aliases:
     add_new: Crear un alias
     remove: Desligar l’alias
@@ -777,7 +739,6 @@ oc:
     changes_saved_msg: Cambiaments ben realizats !
     copy: Copiar
     delete: Suprimir
-    no_batch_actions_available: Cap d’accion de massa pas disponibla sus aquesta pagina
     order_by: Triar per
     save_changes: Salvar los cambiaments
     validation_errors:
@@ -785,25 +746,6 @@ oc:
       other: I a quicòm que truca ! Mercés de corregir las %{count} errors çai-jos
   html_validator:
     invalid_markup: 'conten un balisatge HTML invalid : %{error}'
-  identity_proofs:
-    active: Actiu
-    authorize: Òc, autorizar
-    authorize_connection_prompt: Autorizar aquesta connexion criptografica ?
-    errors:
-      failed: La connexion criptografica a fracassat. Ensajatz tornamai de %{provider} estant.
-      keybase:
-        invalid_token: Los getons Keybase son de hashes de signaturas e devon èsser de caractèrs 66 hex
-        verification_failed: Keybase reconeis pas aqueste geton coma signatura de l’utilizaire Keybase %{kb_username}. Ensajatz tornamai de Keybase estant.
-      wrong_user: Creacion impossibla de la pròva per %{proving} en estant connectat coma %{current}. Connectatz-vos coma %{proving} e ensajatz tornamai.
-    explanation_html: Aquí podètz connectar d’un biais criptografic vòstras identitats, coma un perfil Keybase. Aquò permet al monde de vos enviar de messatges chifrats e fisar al contengut que lor enviatz.
-    i_am_html: Soi %{username} a %{service}.
-    identity: Identitat
-    inactive: Inactiu
-    publicize_checkbox: 'E enviatz lo tut seguent :'
-    publicize_toot: 'Es provat ! Soi %{username} de %{service} : %{url}'
-    remove: Tirar la pròva del compte
-    status: Estatut de verificacion
-    view_proof: Veire la pròva
   imports:
     modes:
       merge: Fondre
@@ -1032,7 +974,6 @@ oc:
     edit_profile: Modificar lo perfil
     export: Exportar de donadas
     featured_tags: Etiquetas en avant
-    identity_proofs: Pròvas d’identitat
     import: Importar de donadas
     import_and_export: Import e export
     migrate: Migracion de compte
@@ -1065,7 +1006,6 @@ oc:
     pin_errors:
       limit: Avètz ja lo maximum de tuts penjats
       ownership: Se pòt pas penjar lo tut de qualqu’un mai
-      private: Se pòt pas penjar los tuts pas publics
       reblog: Se pòt pas penjar un tut partejat
     poll:
       total_people:
@@ -1211,13 +1151,7 @@ oc:
       subject: Vòstre archiu es prèst per telecargament
       title: Archiu per emportar
     warning:
-      explanation:
-        disable: Quand vòstre compte es gelat, las donadas d’aqueste demòran senceras, mas podètz pas realizar cap d’accion fins que siá desblocat.
-        silence: Del temps que vòstre compte es limitat, solament lo monde que vos sègon veiràn vòstres tuts sus aqueste servidor, e poiriatz èsser tirat de mantuna lista publica. Pasmens, d’autres vos pòdon sègre manualament.
-        suspend: Vòstre compte es suspendut e totes vòstres tuts e fichièrs enviats son estats suprimits sens retorn possible d’aqueste servidor e los de vòstres seguidors.
-      get_in_touch: Podètz respondre a aqueste corrièl per contactar la còla de %{instance}.
       review_server_policies: Repassar las politicas del servidor
-      statuses: 'Especificament per :'
       subject:
         disable: Vòstre compte %{acct} es gelat
         none: Avertiment per %{acct}

@@ -128,8 +128,13 @@ fr:
         context: Contextes du filtre
         current_password: Mot de passe actuel
         data: Données
+<<<<<<< HEAD
         discoverable: Proposer ce compte aux autres
         display_name: Afficher le nom
+=======
+        discoverable: Suggérer ce compte aux autres
+        display_name: Nom public
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
         email: Adresse courriel
         expires_in: Expire après
         fields: Métadonnées du profil

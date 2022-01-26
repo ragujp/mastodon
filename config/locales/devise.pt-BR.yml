@@ -7,10 +7,17 @@ pt-BR:
     failure:
       already_authenticated: Você entrou na sua conta.
       inactive: Sua conta não foi confirmada ainda.
+<<<<<<< HEAD
       invalid: '%{authentication_keys} ou senha inválida.'
       last_attempt: Você tem mais uma tentativa antes de sua conta ser bloqueada.
       locked: Sua conta está bloqueada.
       not_found_in_database: '%{authentication_keys} ou senha inválida.'
+=======
+      invalid: "%{authentication_keys} ou senha inválida."
+      last_attempt: Você tem mais uma tentativa antes de sua conta ser bloqueada.
+      locked: Sua conta está bloqueada.
+      not_found_in_database: "%{authentication_keys} ou senha inválida."
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       pending: Sua conta está sendo revisada.
       timeout: Você saiu de sua conta. Entre novamente para continuar.
       unauthenticated: Você precisa entrar ou criar uma conta antes de continuar.

@@ -94,7 +94,10 @@ ms:
     accounts:
       add_email_domain_block: Sekat domain e-mel
       approve: Luluskan
+<<<<<<< HEAD
       approve_all: Luluskan semua
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       approved_msg: Berjaya meluluskan permohonan pendaftaran %{username}
       are_you_sure: Adakah anda pasti?
       avatar: Avatar
@@ -146,7 +149,10 @@ ms:
         active: Aktif
         all: Semua
         pending: Menunggu
+<<<<<<< HEAD
         silenced: Didiamkan
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
         suspended: Digantungkan
         title: Penyederhanaan
       moderation_notes: Catatan penyederhana
@@ -164,7 +170,6 @@ ms:
       redownload: Segarkan semula profil
       redownloaded_msg: Berjaya segarkan semula profil %{username} daripada asalnya
       reject: Tolak
-      reject_all: Tolak semua
       rejected_msg: Berjaya menolak permohonan pendaftaran %{username}
       remove_avatar: Buang avatar
       remove_header: Buang pengepala
@@ -199,7 +204,10 @@ ms:
       suspended: Digantung
       suspension_irreversible: Data akaun ini telah dipadam secara kekal. Anda boleh nyahgantungkannya untuk membuatkan akaun ini boleh digunakan semula tetapi data lama tidak akan diperolehi.
       suspension_reversible_hint_html: Akaun ini telah digantung, dan datanya akan dibuang pada %{date}. Sebelum tarikh itu, akaun ini boleh diperoleh semula tanpa kesan buruk. Jika anda mahu memadamkan kesemua data akaun ini serta-merta, anda boleh melakukannya di bawah.
+<<<<<<< HEAD
       time_in_queue: Menunggu giliran %{time}
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       title: Akaun
       unconfirmed_email: E-mel belum disahkan
       undo_sensitized: Nyahtanda sensitif
@@ -356,6 +364,7 @@ ms:
       updated_msg: Emoji berjaya dikemaskini!
       upload: Muat naik
     dashboard:
+<<<<<<< HEAD
       authorized_fetch_mode: Mod selamat
       backlog: tugasan tunggakan
       config: Tatarajah
@@ -382,6 +391,11 @@ ms:
       week_users_active: aktif minggu ini
       week_users_new: pengguna minggu ini
       whitelist_mode: Mod persekutuan terhad
+=======
+      software: Perisian
+      space: Kegunaan ruang
+      title: Papan pemuka
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
     domain_allows:
       add_new: Benarkan persekutuan dengan domain
       created_msg: Domain telah berjaya dibenarkan untuk persekutuan
@@ -505,8 +519,11 @@ ms:
         title: Cipta peraturan alamat IP baharu
       no_ip_block_selected: Tiada peraturan alamat IP diubah kerana tiada yang dipilih
       title: Peraturan alamat IP
+<<<<<<< HEAD
     pending_accounts:
       title: Akaun sedang menunggu (%{count})
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
     relationships:
       title: "Hubungan %{acct}"
     relays:
@@ -532,8 +549,11 @@ ms:
       account:
         notes:
           other: "%{count} catatan"
+<<<<<<< HEAD
         reports:
           other: "%{count} laporan"
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       action_taken_by: Tindakan diambil oleh
       are_you_sure: Adakah anda pasti?
       assign_to_self: Menugaskan kepada saya

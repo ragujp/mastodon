@@ -102,7 +102,10 @@
   "navigation_bar.security": "Хәвефсезлек",
   "notification.favourite": "{name} favourited your status",
   "notification.reblog": "{name} boosted your status",
+<<<<<<< HEAD
   "notifications.column_settings.filter_bar.show": "Күрсәтү",
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "notifications.column_settings.status": "New toots:",
   "notifications.filter.all": "Бөтенесе",
   "poll.closed": "Ябык",

@@ -16,8 +16,13 @@
   "account.endorse": "Recommander sur le profil",
   "account.follow": "Suivre",
   "account.followers": "Abonnés",
+<<<<<<< HEAD
   "account.followers.empty": "Personne ne suit cet utilisateur pour l’instant.",
   "account.followers_counter": "{count, plural, one {{counter} Abonné} other {{counter} Abonnés}}",
+=======
+  "account.followers.empty": "Personne ne suit cet·te utilisateur·rice pour l’instant.",
+  "account.followers_counter": "{count, plural, one {{counter} Abonné·e} other {{counter} Abonné·e·s}}",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "account.following_counter": "{count, plural, other {{counter} Abonnements}}",
   "account.follows.empty": "Cet utilisateur ne suit personne pour l’instant.",
   "account.follows_you": "Vous suit",
@@ -47,11 +52,16 @@
   "account.unmute": "Ne plus masquer @{name}",
   "account.unmute_notifications": "Ne plus masquer les notifications de @{name}",
   "account_note.placeholder": "Cliquez pour ajouter une note",
+  "admin.dashboard.retention": "Rétention",
+  "admin.dashboard.retention.average": "Moyenne",
+  "admin.dashboard.retention.cohort": "Mois d'inscription",
+  "admin.dashboard.retention.cohort_size": "Nouveaux utilisateurs",
   "alert.rate_limited.message": "Veuillez réessayer après {retry_time, time, medium}.",
   "alert.rate_limited.title": "Débit limité",
   "alert.unexpected.message": "Une erreur inattendue s’est produite.",
   "alert.unexpected.title": "Oups !",
   "announcement.announcement": "Annonce",
+  "attachments_list.unprocessed": "(non traité)",
   "autosuggest_hashtag.per_week": "{count} par semaine",
   "boost_modal.combo": "Vous pouvez appuyer sur {combo} pour passer ceci la prochaine fois",
   "bundle_column_error.body": "Une erreur s’est produite lors du chargement de ce composant.",
@@ -113,15 +123,25 @@
   "confirmations.delete.message": "Voulez-vous vraiment supprimer ce message ?",
   "confirmations.delete_list.confirm": "Supprimer",
   "confirmations.delete_list.message": "Voulez-vous vraiment supprimer définitivement cette liste ?",
+  "confirmations.discard_edit_media.confirm": "Rejeter",
+  "confirmations.discard_edit_media.message": "Vous avez des modifications non enregistrées de la description ou de l'aperçu du média, les supprimer quand même ?",
   "confirmations.domain_block.confirm": "Bloquer tout le domaine",
+<<<<<<< HEAD
   "confirmations.domain_block.message": "Voulez-vous vraiment, vraiment bloquer {domain} en entier ? Dans la plupart des cas, quelques blocages ou masquages ciblés sont suffisants et préférables. Vous ne verrez plus de contenu provenant de ce domaine, ni dans fils publics, ni dans vos notifications. Vos abonnés utilisant ce domaine seront retirés.",
+=======
+  "confirmations.domain_block.message": "Voulez-vous vraiment, vraiment bloquer {domain} en entier ? Dans la plupart des cas, quelques blocages ou masquages ciblés sont suffisants et préférables. Vous ne verrez plus de contenu provenant de ce domaine, ni dans vos fils publics, ni dans vos notifications. Vos abonné·e·s utilisant ce domaine seront retiré·e·s.",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "confirmations.logout.confirm": "Se déconnecter",
   "confirmations.logout.message": "Voulez-vous vraiment vous déconnecter ?",
   "confirmations.mute.confirm": "Masquer",
   "confirmations.mute.explanation": "Cela masquera ses messages et les messages le ou la mentionnant, mais cela lui permettra quand même de voir vos messages et de vous suivre.",
   "confirmations.mute.message": "Voulez-vous vraiment masquer {name} ?",
   "confirmations.redraft.confirm": "Supprimer et ré-écrire",
+<<<<<<< HEAD
   "confirmations.redraft.message": "Êtes-vous sûr de vouloir effacer ce statut pour le récrire ? Ses partages ainsi que ses mises en favori seront perdus et ses réponses seront orphelines.",
+=======
+  "confirmations.redraft.message": "Êtes-vous sûr·e de vouloir effacer ce statut pour le réécrire ? Ses partages ainsi que ses mises en favori seront perdus et ses réponses seront orphelines.",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "confirmations.reply.confirm": "Répondre",
   "confirmations.reply.message": "Répondre maintenant écrasera le message que vous rédigez actuellement. Voulez-vous vraiment continuer ?",
   "confirmations.unfollow.confirm": "Ne plus suivre",
@@ -142,7 +162,11 @@
   "emoji_button.food": "Nourriture & Boisson",
   "emoji_button.label": "Insérer un émoji",
   "emoji_button.nature": "Nature",
+<<<<<<< HEAD
   "emoji_button.not_found": "Aucune correspondance d'émoji trouvée",
+=======
+  "emoji_button.not_found": "Aucun émoji correspondant n'a été trouvé",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "emoji_button.objects": "Objets",
   "emoji_button.people": "Personnes",
   "emoji_button.recent": "Fréquemment utilisés",
@@ -153,7 +177,11 @@
   "empty_column.account_suspended": "Compte suspendu",
   "empty_column.account_timeline": "Aucun message ici !",
   "empty_column.account_unavailable": "Profil non disponible",
+<<<<<<< HEAD
   "empty_column.blocks": "Vous n’avez bloqué aucun utilisateur pour le moment.",
+=======
+  "empty_column.blocks": "Vous n’avez bloqué aucun compte pour le moment.",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "empty_column.bookmarked_statuses": "Vous n'avez pas de message en marque-page. Lorsque vous en ajouterez un, il apparaîtra ici.",
   "empty_column.community": "Le fil public local est vide. Écrivez donc quelque chose pour le remplir !",
   "empty_column.direct": "Vous n’avez pas encore de messages directs. Lorsque vous en enverrez ou recevrez un, il s’affichera ici.",
@@ -167,7 +195,11 @@
   "empty_column.home.suggestions": "Voir quelques suggestions",
   "empty_column.list": "Il n’y a rien dans cette liste pour l’instant. Quand des membres de cette liste publieront de nouveaux messages, ils apparaîtront ici.",
   "empty_column.lists": "Vous n’avez pas encore de liste. Lorsque vous en créerez une, elle apparaîtra ici.",
+<<<<<<< HEAD
   "empty_column.mutes": "Vous n’avez masqué aucun utilisateur pour le moment.",
+=======
+  "empty_column.mutes": "Vous n’avez masqué aucun compte pour le moment.",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "empty_column.notifications": "Vous n’avez pas encore de notification. Interagissez avec d’autres personnes pour débuter la conversation.",
   "empty_column.public": "Il n’y a rien ici ! Écrivez quelque chose publiquement, ou bien suivez manuellement des personnes d’autres serveurs pour remplir le fil public",
   "error.unexpected_crash.explanation": "En raison d’un bug dans notre code ou d’un problème de compatibilité avec votre navigateur, cette page n’a pas pu être affichée correctement.",
@@ -225,13 +257,21 @@
   "keyboard_shortcuts.hotkey": "Raccourci clavier",
   "keyboard_shortcuts.legend": "Afficher cet aide-mémoire",
   "keyboard_shortcuts.local": "Ouvrir le fil public local",
+<<<<<<< HEAD
   "keyboard_shortcuts.mention": "Mentionner l’auteur",
+=======
+  "keyboard_shortcuts.mention": "Mentionner l’auteur·rice",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "keyboard_shortcuts.muted": "Ouvrir la liste des comptes masqués",
   "keyboard_shortcuts.my_profile": "Ouvrir votre profil",
   "keyboard_shortcuts.notifications": "Ouvrir la colonne de notifications",
   "keyboard_shortcuts.open_media": "ouvrir le média",
   "keyboard_shortcuts.pinned": "Ouvrir la liste des messages épinglés",
+<<<<<<< HEAD
   "keyboard_shortcuts.profile": "Ouvrir le profil de l’auteur",
+=======
+  "keyboard_shortcuts.profile": "Ouvrir le profil de l’auteur·rice",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "keyboard_shortcuts.reply": "Répondre au message",
   "keyboard_shortcuts.requests": "Ouvrir la liste de demandes d’abonnement",
   "keyboard_shortcuts.search": "Se placer dans le champ de recherche",
@@ -254,7 +294,11 @@
   "lists.edit.submit": "Modifier le titre",
   "lists.new.create": "Ajouter une liste",
   "lists.new.title_placeholder": "Titre de la nouvelle liste",
+<<<<<<< HEAD
   "lists.replies_policy.followed": "N'importe quel utilisateur suivi",
+=======
+  "lists.replies_policy.followed": "N'importe quel compte suivi",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "lists.replies_policy.list": "Membres de la liste",
   "lists.replies_policy.none": "Personne",
   "lists.replies_policy.title": "Afficher les réponses à :",
@@ -305,8 +349,13 @@
   "notifications.column_settings.favourite": "Favoris :",
   "notifications.column_settings.filter_bar.advanced": "Afficher toutes les catégories",
   "notifications.column_settings.filter_bar.category": "Barre de filtrage rapide",
+<<<<<<< HEAD
   "notifications.column_settings.filter_bar.show": "Afficher",
   "notifications.column_settings.follow": "Nouveaux abonnés :",
+=======
+  "notifications.column_settings.filter_bar.show_bar": "Afficher la barre de filtre",
+  "notifications.column_settings.follow": "Nouveaux·elles abonné·e·s :",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "notifications.column_settings.follow_request": "Nouvelles demandes d’abonnement :",
   "notifications.column_settings.mention": "Mentions :",
   "notifications.column_settings.poll": "Résultats des sondage :",
@@ -315,7 +364,8 @@
   "notifications.column_settings.show": "Afficher dans la colonne",
   "notifications.column_settings.sound": "Jouer un son",
   "notifications.column_settings.status": "Nouveaux messages :",
-  "notifications.column_settings.unread_markers.category": "Marqueurs de notifications non lues",
+  "notifications.column_settings.unread_notifications.category": "Notifications non lues",
+  "notifications.column_settings.unread_notifications.highlight": "Surligner les notifications non lues",
   "notifications.filter.all": "Tout",
   "notifications.filter.boosts": "Partages",
   "notifications.filter.favourites": "Favoris",
@@ -339,6 +389,7 @@
   "poll.total_votes": "{count, plural, one {# vote} other {# votes}}",
   "poll.vote": "Voter",
   "poll.voted": "Vous avez voté pour cette réponse",
+  "poll.votes": "{votes, plural, one {# vote} other {# votes}}",
   "poll_button.add_poll": "Ajouter un sondage",
   "poll_button.remove_poll": "Supprimer le sondage",
   "privacy.change": "Ajuster la confidentialité du message",
@@ -362,7 +413,11 @@
   "reply_indicator.cancel": "Annuler",
   "report.forward": "Transférer à {target}",
   "report.forward_hint": "Le compte provient d’un autre serveur. Envoyer également une copie anonyme du rapport ?",
+<<<<<<< HEAD
   "report.hint": "Le rapport sera envoyé aux modérateurs de votre instance. Vous pouvez expliquer pourquoi vous signalez le compte ci-dessous :",
+=======
+  "report.hint": "Le rapport sera envoyé aux modérateur·rice·s de votre serveur. Vous pouvez expliquer pourquoi vous signalez le compte ci-dessous :",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "report.placeholder": "Commentaires additionnels",
   "report.submit": "Envoyer",
   "report.target": "Signalement de {target}",
@@ -405,7 +460,11 @@
   "status.reblog_private": "Partager à l’audience originale",
   "status.reblogged_by": "{name} a partagé",
   "status.reblogs.empty": "Personne n’a encore partagé ce message. Lorsque quelqu’un le fera, il apparaîtra ici.",
+<<<<<<< HEAD
   "status.redraft": "Supprimer et récrire",
+=======
+  "status.redraft": "Supprimer et réécrire",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "status.remove_bookmark": "Retirer des marque-pages",
   "status.reply": "Répondre",
   "status.replyAll": "Répondre au fil",
@@ -454,6 +513,7 @@
   "upload_form.video_description": "Décrire pour les personnes ayant des problèmes d’audition ou de vision",
   "upload_modal.analyzing_picture": "Analyse de l’image en cours…",
   "upload_modal.apply": "Appliquer",
+  "upload_modal.applying": "Application en cours…",
   "upload_modal.choose_image": "Choisir une image",
   "upload_modal.description_placeholder": "Buvez de ce whisky que le patron juge fameux",
   "upload_modal.detect_text": "Détecter le texte de l’image",
