@@ -28,12 +28,10 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           flavor: |
             latest=auto
-          tags: |
-            type=l10n,branch=l10n_main
       - uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: l10n_main
           cache-from: type=registry,ref=tootsuite/mastodon:latest
           cache-to: type=inline
