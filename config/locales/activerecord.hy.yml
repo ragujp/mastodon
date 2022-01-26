@@ -28,4 +28,8 @@ hy:
           attributes:
             email:
               blocked: արգելուած էլ. փոստի ծառայութիւն
+<<<<<<< HEAD
               unreachable: կարծես գոյութիւն չունի 
+=======
+              unreachable: կարծես գոյութիւն չունի
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a

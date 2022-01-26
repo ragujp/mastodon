@@ -98,7 +98,10 @@
     accounts:
       add_email_domain_block: Svartelist E-postdomenet
       approve: Godkjenn
+<<<<<<< HEAD
       approve_all: Godkjenn alle
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       approved_msg: Godkjent %{username} sin registreringsapplikasjon
       are_you_sure: Er du sikker?
       avatar: Profilbilde
@@ -152,7 +155,6 @@
         active: Aktive
         all: Alle
         pending: Avventer
-        silenced: Målbundet
         suspended: Utvist
         title: Moderasjon
       moderation_notes: Moderasjonsnotater
@@ -170,7 +172,10 @@
       redownload: Oppdater avatar
       redownloaded_msg: Oppdatert %{username} sin profil fra opprinnelse
       reject: Avslå
+<<<<<<< HEAD
       reject_all: Avslå alle
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       rejected_msg: Vellykket avvist %{username} sin registreringsapplikasjon
       remove_avatar: Fjern profilbilde
       remove_header: Fjern overskrift
@@ -208,7 +213,10 @@
       suspended: Suspendert
       suspension_irreversible: Dataene fra denne kontoen har blitt ikke reverserbart slettet. Du kan oppheve suspenderingen av kontoen for å gjøre den brukbart, men den vil ikke gjenopprette alle data den tidligere har hatt.
       suspension_reversible_hint_html: Kontoen har blitt suspendert, og dataene vil bli fullstendig fjernet den %{date}. Frem til da kan kontoen gjenopprettes uten negative effekter. Hvis du ønsker å fjerne alle kontoens data umiddelbart, kan du gjøre det nedenfor.
+<<<<<<< HEAD
       time_in_queue: Venter i kø %{time}
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       title: Kontoer
       unconfirmed_email: Ubekreftet E-postadresse
       undo_silenced: Angre målbinding
@@ -223,6 +231,7 @@
       whitelisted: Hvitelistet
     action_logs:
       action_types:
+        approve_user: Godkjenn bruker
         assigned_to_self_report: Tilordne rapport
         change_email_user: Endre brukerens E-postadresse
         confirm_user: Bekreft brukeren
@@ -244,6 +253,7 @@
         enable_custom_emoji: Skru på tilpassede emojier
         enable_user: Aktiver bruker
         promote_user: Promoter bruker
+        reject_user: Avvis bruker
         remove_avatar_user: Fjern Avatar
         reopen_report: Gjenåpne rapporten
         reset_password_user: Tilbakestill passord
@@ -255,11 +265,19 @@
         update_custom_emoji: Oppdater tilpasset Emoji
         update_status: Oppdater statusen
       actions:
+<<<<<<< HEAD
+=======
+        approve_user_html: "%{name} godkjente registrering fra %{target}"
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
         create_custom_emoji_html: "%{name} lastet opp ny emoji %{target}"
         create_domain_allow_html: "%{name} tillatt føderasjon med domenet %{target}"
         create_domain_block_html: "%{name} blokkert domene %{target}"
         create_email_domain_block_html: "%{name} blokkert e-post domene %{target}"
         create_ip_block_html: "%{name} opprettet regel for IP %{target}"
+<<<<<<< HEAD
+=======
+        reject_user_html: "%{name} avslo registrering fra %{target}"
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
         silence_account_html: "%{name} begrenset %{target} sin konto"
       deleted_status: "(statusen er slettet)"
       empty: Ingen loggføringer ble funnet.
@@ -317,32 +335,19 @@
       updated_msg: Emoji oppdatert uten problemer!
       upload: Last opp
     dashboard:
-      authorized_fetch_mode: Sikkermodus
-      backlog: opphopsloggede jobber
-      config: Oppsett
-      feature_deletions: Kontoslettinger
-      feature_invites: Invitasjonslenker
-      feature_profile_directory: Profilmappe
-      feature_registrations: Registreringer
-      feature_relay: Føderasjonsoverganger
-      feature_timeline_preview: Tidslinje-forhåndsvisning
-      features: Egenskaper
-      hidden_service: Føderering med skjulte tjenester
-      open_reports: åpne rapporter
-      pending_tags: emneknagger som venter gjennomgang
-      pending_users: brukere som venter gjennomgang
-      recent_users: Nylige brukere
-      search: Fulltekstsøk
-      single_user_mode: Enpersons-modus
+      active_users: aktive brukere
+      interactions: interaksjoner
+      media_storage: Medialagring
+      new_users: nye brukere
+      opened_reports: rapporter åpnet
+      resolved_reports: rapporter løst
       software: Programvare
+      sources: Kilder for registreringer
       space: Plassbruk
       title: Kontrollpanel
-      total_users: brukere totalt
-      trends: Trender
-      week_interactions: samhandlinger denne uken
-      week_users_active: aktiv denne uken
-      week_users_new: brukere denne uken
-      whitelist_mode: Hvitelistemodus
+      top_languages: Mest aktive språk
+      top_servers: Mest aktive servere
+      website: Nettside
     domain_allows:
       add_new: Hvitelist domene
       created_msg: Domenet har blitt hvitelistet
@@ -462,8 +467,6 @@
         title: Opprett ny IP-regel
       no_ip_block_selected: Ingen IP-regler ble endret da ingen ble valgt
       title: IP-regler
-    pending_accounts:
-      title: Avventende brukere (%{count})
     relationships:
       title: "%{acct} sitt forhold"
     relays:
@@ -490,9 +493,6 @@
         notes:
           one: "%{count} notis"
           other: "%{count} notiser"
-        reports:
-          one: "%{count} rapport"
-          other: "%{count} rapporter"
       action_taken_by: Handling utført av
       are_you_sure: Er du sikker?
       assign_to_self: Tilegn til meg
@@ -622,15 +622,16 @@
       destroyed_msg: Vellykket sletting av sideopplasting!
     statuses:
       back_to_account: Tilbake til kontosiden
-      batch:
-        delete: Slett
-        nsfw_off: NSFW AV
-        nsfw_on: NSFW PÅ
       deleted: Slettet
+<<<<<<< HEAD
       failed_to_execute: Utføring mislyktes
       media:
         title: Media
       no_media: Ingen media
+=======
+      media:
+        title: Media
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       no_status_selected: Ingen statuser ble endret da ingen ble valgt
       title: Kontostatuser
       with_media: Med media
@@ -641,18 +642,7 @@
         action: Behandle serverregler
         message_html: Du har ikke definert noen serverregler.
     tags:
-      accounts_today: Ulike brukere i dag
-      accounts_week: Unike brukstilfeller denne uken
-      last_active: Senest aktiv
-      most_popular: Mest populært
-      most_recent: Nyligst
-      name: Emneknagg
       review: Gjennomgangsstatus
-      reviewed: Gjennomgått
-      title: Emneknagger
-      trending_right_now: Trender akkurat nå
-      unique_uses_today: "%{count} legger ut om det i dag"
-      unreviewed: Ikke gjennomgått
     title: Administrasjon
     warning_presets:
       add_new: Legg til ny
@@ -665,8 +655,11 @@
       body: "%{reporter} har rapportert %{target}"
       body_remote: Noen fra %{domain} har rapportert %{target}
       subject: 'Ny rapport for %{instance} (#%{id})'
+<<<<<<< HEAD
     new_trending_tag:
       body: 'Emneknaggen #%{name} trender i dag, men den har ikke blitt gjennomgått tidligere. Den vil ikke bli vist offentlig med mindre du tillater at den blir det, eller du kan bare lagre skjemaet slik det er for å aldri høre om det igjen.'
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   aliases:
     add_new: Lag et alias
     empty: Du har ingen aliaser.
@@ -861,26 +854,10 @@
     delete: Slett
     order_by: Sorter etter
     save_changes: Lagre endringer
+    today: i dag
     validation_errors:
       one: Noe er ikke helt riktig ennå. Vennligst se etter en gang til
       other: Noe er ikke helt riktig ennå. Det er ennå %{count} feil å rette på
-  identity_proofs:
-    active: Aktive
-    authorize: Ja, autoriser
-    authorize_connection_prompt: Vil du autorisere denne kryptografiske forbindelsen?
-    errors:
-      keybase:
-        verification_failed: Keybase kjenner ikke igjen denne sjetongen som en signatur for Keybase-brukeren %{kb_username}. Vennligst prøv igjen gjennom Keybase.
-      wrong_user: Kan ikke lage et bevis for %{proving} mens du er logget på som %{current}. Logg på som %{proving} og prøv igjen.
-    explanation_html: Her kan du kryptografisk koble til dine andre enheter, f.eks. en Keybase-profil. Dette lar andre folk sende deg krypterte meldinger og stole på innhold som du sender dem.
-    i_am_html: Jeg er %{username} på %{service}.
-    identity: Identitet
-    inactive: Inaktive
-    publicize_checkbox: 'Og tut ut dette:'
-    publicize_toot: 'Det er bevist! Jeg er %{username} på %{service}: %{url}'
-    remove: Fjern bevis fra kontoen
-    status: Verifiseringsstatus
-    view_proof: Se bevis
   imports:
     modes:
       merge: Slå sammen
@@ -1140,7 +1117,6 @@
     edit_profile: Endre profil
     export: Dataeksport
     featured_tags: Utvalgte emneknagger
-    identity_proofs: Identitetsbevis
     import: Importér
     import_and_export: Importer og eksporter
     migrate: Kontomigrering
@@ -1170,9 +1146,9 @@
     open_in_web: Åpne i nettleser
     over_character_limit: grense på %{max} tegn overskredet
     pin_errors:
+      direct: Innlegg som bare er synlige for nevnte brukere kan ikke festes
       limit: Du har allerede festet det maksimale antall tuter
       ownership: Kun egne tuter kan festes
-      private: Kun offentlige tuter kan festes
       reblog: En fremheving kan ikke festes
     poll:
       total_people:
@@ -1319,14 +1295,16 @@
       subject: Bekreft forsøk på å logge inn
       title: Påloggingsforsøk
     warning:
+<<<<<<< HEAD
       explanation:
         disable: Mens kontoen din er fryst, forblir dine kontodata intakt, men du kan ikke utføre noen handlinger før den har blitt tint opp.
         sensitive: De opplastede mediefilene og linket vil bli behandlet som sensitive.
         silence: Mens kontoen din er begrenset, vil bare folk som allerede følger deg se dine tuter på denne tjeneren, og du kan bli ekskludert fra diverse offentlige oppføringer. Men andre kan fortsatt følge deg manuelt.
         suspend: Kontoen din har blitt suspendert, og alle dine tuter og opplastede media har blitt ugjenkallelig fjernet fra denne tjeneren, og fra tjenere der du hadde følgere.
       get_in_touch: Du kan svare på denne E-posten for å komme i kontakt med styret i %{instance}.
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       review_server_policies: Gjennomgå serverretningslinjer
-      statuses: 'Spesifikt for å:'
       subject:
         disable: Kontoen din, %{acct}, har blitt fryst
         none: Advarsel for %{acct}

@@ -9,15 +9,31 @@
   "account.browse_more_on_origin_server": "המשך לגלוש בפרופיל המקורי",
   "account.cancel_follow_request": "בטל בקשת מעקב",
   "account.direct": "Direct Message @{name}",
+<<<<<<< HEAD
   "account.domain_blocked": "הדומיין חסוי",
   "account.edit_profile": "עריכת פרופיל",
+=======
+  "account.disable_notifications": "הפסק לשלוח לי התראות כש@{name} מפרסמים",
+  "account.domain_blocked": "הדומיין חסוי",
+  "account.edit_profile": "עריכת פרופיל",
+  "account.enable_notifications": "שלח לי התראות כש@{name} מפרסמים",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "account.endorse": "הצג בפרופיל",
   "account.follow": "מעקב",
   "account.followers": "עוקבים",
   "account.followers.empty": "אף אחד לא עוקב אחר המשתמש הזה עדיין.",
+<<<<<<< HEAD
   "account.follows.empty": "משתמש זה לא עוקב אחר אף אחד עדיין.",
   "account.follows_you": "במעקב אחריך",
   "account.hide_reblogs": "להסתיר הידהודים מאת @{name}",
+=======
+  "account.followers_counter": "{count, plural,one {עוקב אחד} other {{counter} עוקבים}}",
+  "account.following_counter": "{count, plural,one {עוקב אחרי {counter}}other {עוקב אחרי {counter}}}",
+  "account.follows.empty": "משתמש זה לא עוקב אחר אף אחד עדיין.",
+  "account.follows_you": "במעקב אחריך",
+  "account.hide_reblogs": "להסתיר הידהודים מאת @{name}",
+  "account.joined": "הצטרפו ב{date}",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "account.last_status": "פעילות אחרונה",
   "account.link_verified_on": "בעלות על הקישור הזה נבדקה לאחרונה ב{date}",
   "account.locked_info": "מצב הפרטיות של החשבון הנוכחי הוגדר כנעול. בעל החשבון קובע באופן פרטני מי יכול לעקוב אחריו.",
@@ -42,11 +58,14 @@
   "account.unmute": "הפסקת השתקת @{name}",
   "account.unmute_notifications": "להפסיק הסתרת הודעות מעם @{name}",
   "account_note.placeholder": "ללא הערה",
+  "admin.dashboard.retention.average": "ממוצע",
+  "admin.dashboard.retention.cohort_size": "משתמשים חדשים",
   "alert.rate_limited.message": "נא לנסות אחרי {retry_time, time, medium}.",
   "alert.rate_limited.title": "מגבלות מיכסה",
   "alert.unexpected.message": "אירעה שגיאה בלתי צפויה.",
   "alert.unexpected.title": "אופס!",
   "announcement.announcement": "הודעה",
+  "attachments_list.unprocessed": "(לא מעובד)",
   "autosuggest_hashtag.per_week": "{count} לשבוע",
   "boost_modal.combo": "ניתן להקיש {combo} כדי לדלג בפעם הבאה",
   "bundle_column_error.body": "משהו השתבש בעת הצגת הרכיב הזה.",
@@ -86,16 +105,30 @@
   "compose_form.lock_disclaimer": "חשבונך אינו {locked}. כל אחד יוכל לעקוב אחריך כדי לקרוא את הודעותיך המיועדות לעוקבים בלבד.",
   "compose_form.lock_disclaimer.lock": "נעול",
   "compose_form.placeholder": "מה עובר לך בראש?",
+<<<<<<< HEAD
+=======
+  "compose_form.poll.add_option": "הוסיפו בחירה",
+  "compose_form.poll.duration": "משך הסקר",
+  "compose_form.poll.option_placeholder": "אפשרות מספר {number}",
+  "compose_form.poll.remove_option": "הסר בחירה זו",
+  "compose_form.poll.switch_to_multiple": "אפשרו בחירה מרובה בסקר",
+  "compose_form.poll.switch_to_single": "אפשרו בחירה בודדת בסקר",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "compose_form.publish": "ללחוש",
   "compose_form.publish_loud": "לחצרץ!",
   "compose_form.spoiler.marked": "Text is hidden behind warning",
   "compose_form.spoiler.unmarked": "Text is not hidden",
   "compose_form.spoiler_placeholder": "אזהרת תוכן",
   "confirmation_modal.cancel": "ביטול",
+<<<<<<< HEAD
+=======
+  "confirmations.block.block_and_report": "לחסום ולדווח",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "confirmations.block.confirm": "לחסום",
   "confirmations.block.message": "לחסום את {name}?",
   "confirmations.delete.confirm": "למחוק",
   "confirmations.delete.message": "למחוק את ההודעה?",
+<<<<<<< HEAD
   "confirmations.domain_block.confirm": "הסתר קהילה שלמה",
   "confirmations.domain_block.message": "באמת באמת לחסום את כל קהילת {domain}? ברב המקרים השתקות נבחרות של מספר משתמשים מסויימים צריכה להספיק.",
   "confirmations.mute.confirm": "להשתיק",
@@ -103,6 +136,27 @@
   "confirmations.redraft.message": "Are you sure you want to delete this status and re-draft it? You will lose all replies, boosts and favourites to it.",
   "confirmations.unfollow.confirm": "להפסיק מעקב",
   "confirmations.unfollow.message": "להפסיק מעקב אחרי {name}?",
+=======
+  "confirmations.delete_list.confirm": "למחוק",
+  "confirmations.delete_list.message": "האם אתם בטוחים שאתם רוצים למחוק את הרשימה לצמיתות?",
+  "confirmations.domain_block.confirm": "הסתר קהילה שלמה",
+  "confirmations.domain_block.message": "באמת באמת לחסום את כל קהילת {domain}? ברב המקרים השתקות נבחרות של מספר משתמשים מסויימים צריכה להספיק.",
+  "confirmations.logout.confirm": "להתנתק",
+  "confirmations.logout.message": "האם אתם בטוחים שאתם רוצים להתנתק?",
+  "confirmations.mute.confirm": "להשתיק",
+  "confirmations.mute.message": "להשתיק את {name}?",
+  "confirmations.redraft.confirm": "מחק וערוך מחדש",
+  "confirmations.redraft.message": "Are you sure you want to delete this status and re-draft it? You will lose all replies, boosts and favourites to it.",
+  "confirmations.reply.confirm": "הגב",
+  "confirmations.reply.message": "הגבה עכשיו ידרוס את ההודעה שאתם כותבים כעת. האם אתם בטוחים שברצונכם להמשיך?",
+  "confirmations.unfollow.confirm": "להפסיק מעקב",
+  "confirmations.unfollow.message": "להפסיק מעקב אחרי {name}?",
+  "conversation.delete": "מחיקת שיחה",
+  "conversation.mark_as_read": "סמן כנקרא",
+  "conversation.open": "צפו בשיחה",
+  "conversation.with": "עם {names}",
+  "directory.recently_active": "פעילים לאחרונה",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "embed.instructions": "ניתן להטמיע את ההודעה באתרך ע\"י העתקת הקוד שלהלן.",
   "embed.preview": "דוגמא כיצד זה יראה:",
   "emoji_button.activity": "פעילות",
@@ -119,9 +173,19 @@
   "emoji_button.search_results": "תוצאות חיפוש",
   "emoji_button.symbols": "סמלים",
   "emoji_button.travel": "טיולים ואתרים",
+<<<<<<< HEAD
   "empty_column.account_timeline": "No toots here!",
   "empty_column.bookmarked_statuses": "You don't have any bookmarked toots yet. When you bookmark one, it will show up here.",
   "empty_column.community": "טור הסביבה ריק. יש לפרסם משהו כדי שדברים יתרחילו להתגלגל!",
+=======
+  "empty_column.account_suspended": "חשבון מושהה",
+  "empty_column.account_timeline": "No toots here!",
+  "empty_column.account_unavailable": "פרופיל לא זמין",
+  "empty_column.blocks": "עדיין לא חסמתם משתמשים אחרים.",
+  "empty_column.bookmarked_statuses": "You don't have any bookmarked toots yet. When you bookmark one, it will show up here.",
+  "empty_column.community": "טור הסביבה ריק. יש לפרסם משהו כדי שדברים יתרחילו להתגלגל!",
+  "empty_column.direct": "עדיין אין לכם הודעות פרטיות. כאשר תשלחו או תקבלו אחת, היא תופיע כאן.",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "empty_column.domain_blocks": "There are no hidden domains yet.",
   "empty_column.favourited_statuses": "You don't have any favourite toots yet. When you favourite one, it will show up here.",
   "empty_column.favourites": "No one has favourited this toot yet. When someone does, they will show up here.",
@@ -182,6 +246,10 @@
   "navigation_bar.blocks": "חסימות",
   "navigation_bar.community_timeline": "ציר זמן מקומי",
   "navigation_bar.compose": "Compose new toot",
+<<<<<<< HEAD
+=======
+  "navigation_bar.direct": "הודעות ישירות",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "navigation_bar.domain_blocks": "Hidden domains",
   "navigation_bar.edit_profile": "עריכת פרופיל",
   "navigation_bar.favourites": "חיבובים",
@@ -237,6 +305,10 @@
   "status.cannot_reblog": "לא ניתן להדהד הודעה זו",
   "status.copy": "Copy link to status",
   "status.delete": "מחיקה",
+<<<<<<< HEAD
+=======
+  "status.direct": "הודעה ישירה ל@{name}",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "status.embed": "הטמעה",
   "status.favourite": "חיבוב",
   "status.load_more": "עוד",

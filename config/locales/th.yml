@@ -84,7 +84,6 @@ th:
     accounts:
       add_email_domain_block: ปิดกั้นโดเมนอีเมล
       approve: อนุมัติ
-      approve_all: อนุมัติทั้งหมด
       approved_msg: อนุมัติใบสมัครลงทะเบียนของ %{username} สำเร็จ
       are_you_sure: คุณแน่ใจหรือไม่?
       avatar: ภาพประจำตัว
@@ -99,9 +98,11 @@ th:
       confirm: ยืนยัน
       confirmed: ยืนยันแล้ว
       confirming: กำลังยืนยัน
+      custom: กำหนดเอง
       delete: ลบข้อมูล
       deleted: ลบแล้ว
       demote: ลดขั้น
+      destroyed_msg: "ตอนนี้จัดคิวเพื่อลบข้อมูลของ %{username} ในเร็ว ๆ นี้แล้ว"
       disable: อายัด
       disable_sign_in_token_auth: ปิดใช้งานการรับรองความถูกต้องด้วยโทเคนอีเมล
       disable_two_factor_authentication: ปิดใช้งาน 2FA
@@ -137,7 +138,10 @@ th:
         active: ใช้งานอยู่
         all: ทั้งหมด
         pending: รอดำเนินการ
+<<<<<<< HEAD
         silenced: จำกัดอยู่
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
         suspended: ระงับอยู่
         title: การควบคุม
       moderation_notes: หมายเหตุการควบคุม
@@ -154,7 +158,6 @@ th:
       redownload: รีเฟรชโปรไฟล์
       redownloaded_msg: รีเฟรชโปรไฟล์ของ %{username} จากจุดเริ่มต้นสำเร็จ
       reject: ปฏิเสธ
-      reject_all: ปฏิเสธทั้งหมด
       rejected_msg: ปฏิเสธใบสมัครลงทะเบียนของ %{username} สำเร็จ
       remove_avatar: เอาภาพประจำตัวออก
       remove_header: เอาส่วนหัวออก
@@ -190,8 +193,9 @@ th:
       statuses: โพสต์
       subscribe: บอกรับ
       suspended: ระงับอยู่
-      time_in_queue: กำลังรออยู่ในคิว %{time}
       title: บัญชี
+      unblock_email: เลิกปิดกั้นที่อยู่อีเมล
+      unblocked_email_msg: เลิกปิดกั้นที่อยู่อีเมลของ %{username} สำเร็จ
       unconfirmed_email: อีเมลที่ยังไม่ได้ยืนยัน
       undo_sensitized: เลิกทำการบังคับให้ละเอียดอ่อน
       undo_silenced: เลิกทำการจำกัด
@@ -206,6 +210,7 @@ th:
       whitelisted: อนุญาตการติดต่อกับภายนอกแล้ว
     action_logs:
       action_types:
+        approve_user: อนุมัติผู้ใช้
         assigned_to_self_report: มอบหมายรายงาน
         change_email_user: เปลี่ยนอีเมลสำหรับผู้ใช้
         confirm_user: ยืนยันผู้ใช้
@@ -223,6 +228,7 @@ th:
         destroy_domain_allow: ลบการอนุญาตโดเมน
         destroy_domain_block: ลบการปิดกั้นโดเมน
         destroy_email_domain_block: ลบการปิดกั้นโดเมนอีเมล
+        destroy_instance: ล้างข้อมูลโดเมน
         destroy_ip_block: ลบกฎ IP
         destroy_status: ลบโพสต์
         destroy_unavailable_domain: ลบโดเมนที่ไม่พร้อมใช้งาน
@@ -235,6 +241,7 @@ th:
         enable_user: เปิดใช้งานผู้ใช้
         memorialize_account: ทำให้บัญชีเป็นอนุสรณ์
         promote_user: เลื่อนขั้นผู้ใช้
+        reject_user: ปฏิเสธผู้ใช้
         remove_avatar_user: เอาภาพประจำตัวออก
         reopen_report: เปิดรายงานใหม่
         reset_password_user: ตั้งรหัสผ่านใหม่
@@ -243,6 +250,10 @@ th:
         silence_account: จำกัดบัญชี
         suspend_account: ระงับบัญชี
         unassigned_report: เลิกมอบหมายรายงาน
+<<<<<<< HEAD
+=======
+        unblock_email_account: เลิกปิดกั้นที่อยู่อีเมล
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
         unsensitive_account: เลิกทำการบังคับให้บัญชีละเอียดอ่อน
         unsilence_account: เลิกทำการจำกัดบัญชี
         unsuspend_account: เลิกระงับบัญชี
@@ -251,6 +262,7 @@ th:
         update_domain_block: อัปเดตการปิดกั้นโดเมน
         update_status: อัปเดตโพสต์
       actions:
+        approve_user_html: "%{name} ได้อนุมัติการลงทะเบียนจาก %{target}"
         assigned_to_self_report_html: "%{name} ได้มอบหมายรายงาน %{target} ให้กับตนเอง"
         change_email_user_html: "%{name} ได้เปลี่ยนที่อยู่อีเมลของผู้ใช้ %{target}"
         confirm_user_html: "%{name} ได้ยืนยันที่อยู่อีเมลของผู้ใช้ %{target}"
@@ -268,6 +280,7 @@ th:
         destroy_domain_allow_html: "%{name} ได้ไม่อนุญาตการติดต่อกับภายนอกกับโดเมน %{target}"
         destroy_domain_block_html: "%{name} ได้เลิกปิดกั้นโดเมน %{target}"
         destroy_email_domain_block_html: "%{name} ได้เลิกปิดกั้นโดเมนอีเมล %{target}"
+        destroy_instance_html: "%{name} ได้ล้างข้อมูลโดเมน %{target}"
         destroy_ip_block_html: "%{name} ได้ลบกฎสำหรับ IP %{target}"
         destroy_status_html: "%{name} ได้เอาโพสต์โดย %{target} ออก"
         disable_2fa_user_html: "%{name} ได้ปิดใช้งานความต้องการสองปัจจัยสำหรับผู้ใช้ %{target}"
@@ -279,6 +292,7 @@ th:
         enable_user_html: "%{name} ได้เปิดใช้งานการเข้าสู่ระบบสำหรับผู้ใช้ %{target}"
         memorialize_account_html: "%{name} ได้เปลี่ยนบัญชีของ %{target} เป็นหน้าอนุสรณ์"
         promote_user_html: "%{name} ได้เลื่อนขั้นผู้ใช้ %{target}"
+        reject_user_html: "%{name} ได้ปฏิเสธการลงทะเบียนจาก %{target}"
         remove_avatar_user_html: "%{name} ได้เอาภาพประจำตัวของ %{target} ออก"
         reopen_report_html: "%{name} ได้เปิดรายงาน %{target} ใหม่"
         reset_password_user_html: "%{name} ได้ตั้งรหัสผ่านของผู้ใช้ %{target} ใหม่"
@@ -287,6 +301,7 @@ th:
         silence_account_html: "%{name} ได้จำกัดบัญชีของ %{target}"
         suspend_account_html: "%{name} ได้ระงับบัญชีของ %{target}"
         unassigned_report_html: "%{name} ได้เลิกมอบหมายรายงาน %{target}"
+        unblock_email_account_html: "%{name} ได้เลิกปิดกั้นที่อยู่อีเมลของ %{target}"
         unsensitive_account_html: "%{name} ได้เลิกทำเครื่องหมายสื่อของ %{target} ว่าละเอียดอ่อน"
         unsilence_account_html: "%{name} ได้เลิกจำกัดบัญชีของ %{target}"
         unsuspend_account_html: "%{name} ได้เลิกระงับบัญชีของ %{target}"
@@ -350,32 +365,25 @@ th:
       updated_msg: อัปเดตอีโมจิสำเร็จ!
       upload: อัปโหลด
     dashboard:
-      authorized_fetch_mode: โหมดปลอดภัย
-      backlog: งานคงค้าง
-      config: การกำหนดค่า
-      feature_deletions: การลบบัญชี
-      feature_invites: ลิงก์เชิญ
-      feature_profile_directory: ไดเรกทอรีโปรไฟล์
-      feature_registrations: การลงทะเบียน
-      feature_relay: รีเลย์การติดต่อกับภายนอก
-      feature_timeline_preview: ตัวอย่างเส้นเวลา
-      features: คุณลักษณะ
-      hidden_service: การติดต่อกับภายนอกกับบริการที่ซ่อนอยู่
-      open_reports: รายงานที่เปิด
-      pending_tags: แฮชแท็กที่กำลังรอการตรวจทาน
-      pending_users: ผู้ใช้ที่กำลังรอการตรวจทาน
-      recent_users: ผู้ใช้ล่าสุด
-      search: การค้นหาข้อความแบบเต็ม
-      single_user_mode: โหมดผู้ใช้เดี่ยว
+      active_users: ผู้ใช้ที่ใช้งานอยู่
+      interactions: การโต้ตอบ
+      media_storage: ที่เก็บข้อมูลสื่อ
+      new_users: ผู้ใช้ใหม่
+      opened_reports: รายงานที่เปิด
+      pending_reports_html:
+        other: "<strong>%{count}</strong> รายงานที่รอดำเนินการ"
+      pending_tags_html:
+        other: "<strong>%{count}</strong> แฮชแท็กที่รอดำเนินการ"
+      pending_users_html:
+        other: "<strong>%{count}</strong> ผู้ใช้ที่รอดำเนินการ"
+      resolved_reports: รายงานที่แก้ปัญหาแล้ว
       software: ซอฟต์แวร์
+      sources: แหล่งที่มาการลงทะเบียน
       space: การใช้พื้นที่
       title: แดชบอร์ด
-      total_users: ผู้ใช้ทั้งหมด
-      trends: แนวโน้ม
-      week_interactions: การโต้ตอบในสัปดาห์นี้
-      week_users_active: ใช้งานอยู่ในสัปดาห์นี้
-      week_users_new: ผู้ใช้ในสัปดาห์นี้
-      whitelist_mode: โหมดการติดต่อกับภายนอกแบบจำกัด
+      top_languages: ภาษาที่ใช้งานอยู่สูงสุด
+      top_servers: เซิร์ฟเวอร์ที่ใช้งานอยู่สูงสุด
+      website: เว็บไซต์
     domain_allows:
       add_new: อนุญาตการติดต่อกับภายนอกกับโดเมน
       created_msg: อนุญาตการติดต่อกับภายนอกกับโดเมนสำเร็จ
@@ -441,6 +449,10 @@ th:
       back_to_limited: จำกัดอยู่
       back_to_warning: คำเตือน
       by_domain: โดเมน
+<<<<<<< HEAD
+=======
+      confirm_purge: คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลจากโดเมนนี้อย่างถาวร?
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       delivery:
         all: ทั้งหมด
         clear: ล้างข้อผิดพลาดการจัดส่ง
@@ -461,6 +473,7 @@ th:
         title: การควบคุม
       private_comment: ความคิดเห็นส่วนตัว
       public_comment: ความคิดเห็นสาธารณะ
+      purge: ล้างข้อมูล
       title: การติดต่อกับภายนอก
       total_blocked_by_us: ปิดกั้นโดยเรา
       total_followed_by_them: ติดตามโดยเขา
@@ -489,8 +502,6 @@ th:
       new:
         title: สร้างกฎ IP ใหม่
       title: กฎ IP
-    pending_accounts:
-      title: บัญชีที่รอดำเนินการ (%{count})
     relationships:
       title: "ความสัมพันธ์ของ %{acct}"
     relays:
@@ -514,12 +525,12 @@ th:
       account:
         notes:
           other: "%{count} หมายเหตุ"
-        reports:
-          other: "%{count} รายงาน"
+      action_log: รายการบันทึกการตรวจสอบ
       are_you_sure: คุณแน่ใจหรือไม่?
       assign_to_self: มอบหมายให้ฉัน
       assigned: ผู้ควบคุมที่ได้รับมอบหมาย
       by_target_domain: โดเมนของบัญชีที่ได้รับการรายงาน
+      category: หมวดหมู่
       comment:
         none: ไม่มี
       created_at: รายงานเมื่อ
@@ -527,11 +538,13 @@ th:
       forwarded_to: ส่งต่อไปยัง %{domain} แล้ว
       mark_as_resolved: ทำเครื่องหมายว่าแก้ปัญหาแล้ว
       mark_as_unresolved: ทำเครื่องหมายว่ายังไม่ได้แก้ปัญหา
+      no_one_assigned: ไม่มีใคร
       notes:
         create: เพิ่มหมายเหตุ
         create_and_resolve: แก้ปัญหาโดยมีหมายเหตุ
         create_and_unresolve: เปิดใหม่โดยมีหมายเหตุ
         delete: ลบ
+        title: หมายเหตุ
       reopen: เปิดรายงานใหม่
       report: 'รายงาน #%{id}'
       reported_account: บัญชีที่ได้รับการรายงาน
@@ -539,11 +552,16 @@ th:
       resolved: แก้ปัญหาแล้ว
       resolved_msg: แก้ปัญหารายงานสำเร็จ!
       status: สถานะ
+<<<<<<< HEAD
+=======
+      statuses: เนื้อหาที่รายงาน
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       target_origin: จุดเริ่มต้นของบัญชีที่ได้รับการรายงาน
       title: รายงาน
       unassign: เลิกมอบหมาย
       unresolved: ยังไม่ได้แก้ปัญหา
       updated_at: อัปเดตเมื่อ
+      view_profile: ดูโปรไฟล์
     rules:
       add_new: เพิ่มกฎ
       delete: ลบ
@@ -635,22 +653,24 @@ th:
         desc_html: มีผลต่อแฮชแท็กที่ไม่ได้ไม่อนุญาตก่อนหน้านี้
         title: อนุญาตให้แฮชแท็กขึ้นแนวโน้มโดยไม่มีการตรวจทานล่วงหน้า
       trends:
+<<<<<<< HEAD
         desc_html: แสดงแฮชแท็กที่ตรวจทานแล้วก่อนหน้านี้ที่กำลังนิยมเป็นสาธารณะ
         title: แฮชแท็กที่กำลังนิยม
+=======
+        desc_html: แสดงเนื้อหาที่ตรวจทานแล้วก่อนหน้านี้ที่กำลังนิยมเป็นสาธารณะ
+        title: แนวโน้ม
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
     site_uploads:
       delete: ลบไฟล์ที่อัปโหลด
       destroyed_msg: ลบการอัปโหลดไซต์สำเร็จ!
     statuses:
       back_to_account: กลับไปที่หน้าบัญชี
       batch:
-        delete: ลบ
-        nsfw_off: ทำเครื่องหมายว่าไม่ละเอียดอ่อน
-        nsfw_on: ทำเครื่องหมายว่าละเอียดอ่อน
+        remove_from_report: เอาออกจากรายงาน
+        report: รายงาน
       deleted: ลบแล้ว
-      failed_to_execute: ไม่สามารถปฏิบัติการ
       media:
         title: สื่อ
-      no_media: ไม่มีสื่อ
       title: โพสต์ของบัญชี
       with_media: มีสื่อ
     system_checks:
@@ -660,6 +680,7 @@ th:
       sidekiq_process_check:
         message_html: ไม่มีกระบวนการ Sidekiq ที่กำลังทำงานสำหรับคิว %{value} โปรดตรวจทานการกำหนดค่า Sidekiq ของคุณ
     tags:
+<<<<<<< HEAD
       accounts_today: การใช้งานที่ไม่ซ้ำกันในวันนี้
       accounts_week: การใช้งานที่ไม่ซ้ำกันในสัปดาห์นี้
       breakdown: การแบ่งการใช้งานของวันนี้ตามแหล่งที่มา
@@ -667,14 +688,47 @@ th:
       most_popular: ยอดนิยม
       most_recent: สร้างล่าสุด
       name: แฮชแท็ก
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       review: สถานะการตรวจทาน
-      reviewed: ตรวจทานแล้ว
-      title: แฮชแท็ก
-      trending_right_now: กำลังนิยม
-      unique_uses_today: "%{count} การโพสต์วันนี้"
-      unreviewed: ยังไม่ได้ตรวจทาน
       updated_msg: อัปเดตการตั้งค่าแฮชแท็กสำเร็จ
     title: การดูแล
+    trends:
+      allow: อนุญาต
+      approved: อนุมัติแล้ว
+      disallow: ไม่อนุญาต
+      links:
+        allow: อนุญาตลิงก์
+        allow_provider: อนุญาตผู้เผยแพร่
+        disallow: ไม่อนุญาตลิงก์
+        disallow_provider: ไม่อนุญาตผู้เผยแพร่
+        shared_by_over_week:
+          other: แบ่งปันโดย %{count} คนในช่วงสัปดาห์ที่ผ่านมา
+        title: ลิงก์ที่กำลังนิยม
+        usage_comparison: แบ่งปัน %{today} ครั้งวันนี้ เทียบกับ %{yesterday} เมื่อวานนี้
+      pending_review: การตรวจทานที่รอดำเนินการ
+      preview_card_providers:
+        allowed: ลิงก์จากผู้เผยแพร่นี้สามารถขึ้นแนวโน้ม
+        rejected: ลิงก์จากผู้เผยแพร่นี้จะไม่ขึ้นแนวโน้ม
+        title: ผู้เผยแพร่
+      rejected: ปฏิเสธแล้ว
+      tags:
+        current_score: คะแนนปัจจุบัน %{score}
+        dashboard:
+          tag_accounts_measure: การใช้งานที่ไม่ซ้ำกัน
+          tag_languages_dimension: ภาษายอดนิยม
+          tag_servers_dimension: เซิร์ฟเวอร์ยอดนิยม
+          tag_uses_measure: การใช้งานทั้งหมด
+        not_trendable: จะไม่ปรากฏภายใต้แนวโน้ม
+        not_usable: ไม่สามารถใช้
+        title: แฮชแท็กที่กำลังนิยม
+        trendable: สามารถปรากฏภายใต้แนวโน้ม
+        trending_rank: 'กำลังนิยม #%{rank}'
+        usable: สามารถใช้
+        usage_comparison: ใช้ %{today} ครั้งวันนี้ เทียบกับ %{yesterday} เมื่อวานนี้
+        used_by_over_week:
+          other: ใช้โดย %{count} คนในช่วงสัปดาห์ที่ผ่านมา
+      title: แนวโน้ม
     warning_presets:
       add_new: เพิ่มใหม่
       delete: ลบ
@@ -688,6 +742,11 @@ th:
       body: "%{reporter} ได้รายงาน %{target}"
       body_remote: ใครสักคนจาก %{domain} ได้รายงาน %{target}
       subject: 'รายงานใหม่สำหรับ %{instance} (#%{id})'
+<<<<<<< HEAD
+=======
+    new_trending_links:
+      subject: ลิงก์ที่กำลังนิยมใหม่สำหรับตรวจทานใน %{instance}
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   aliases:
     add_new: สร้างนามแฝง
     deleted_msg: เอานามแฝงออกสำเร็จ จะไม่สามารถย้ายจากบัญชีนั้นไปยังบัญชีนี้ได้อีกต่อไป
@@ -735,6 +794,7 @@ th:
     invalid_reset_password_token: โทเคนการตั้งรหัสผ่านใหม่ไม่ถูกต้องหรือหมดอายุแล้ว โปรดขอโทเคนใหม่
     link_to_otp: ป้อนรหัสสองปัจจัยจากโทรศัพท์ของคุณหรือรหัสกู้คืน
     link_to_webauth: ใช้อุปกรณ์กุญแจความปลอดภัยของคุณ
+    log_in_with: เข้าสู่ระบบด้วย
     login: เข้าสู่ระบบ
     logout: ออกจากระบบ
     migrate_account: ย้ายไปยังบัญชีอื่น
@@ -762,6 +822,7 @@ th:
   authorize_follow:
     already_following: คุณกำลังติดตามบัญชีนี้อยู่แล้ว
     already_requested: คุณได้ส่งคำขอติดตามไปยังบัญชีนั้นไปแล้ว
+    error: น่าเสียดาย มีข้อผิดพลาดในการค้นหาบัญชีระยะไกล
     follow: ติดตาม
     follow_request: 'คุณได้ส่งคำขอติดตามไปยัง:'
     following: 'สำเร็จ! คุณกำลังติดตาม:'
@@ -821,7 +882,7 @@ th:
     '400': คำขอที่คุณได้ส่งไม่ถูกต้องหรือผิดรูปแบบ
     '403': คุณไม่มีสิทธิอนุญาตเพื่อดูหน้านี้
     '404': หน้าที่คุณกำลังมองหาไม่ได้อยู่ที่นี่
-    '406': This page is not available in the requested format.
+    '406': หน้านี้ไม่พร้อมใช้งานในรูปแบบที่ขอ
     '410': ไม่มีหน้าที่คุณกำลังมองหาอยู่ที่นี่อีกต่อไป
     '422':
       content: การตรวจสอบความปลอดภัยล้มเหลว คุณกำลังปิดกั้นคุกกี้หรือไม่?
@@ -830,7 +891,7 @@ th:
     '500':
       content: เราขออภัย แต่มีบางอย่างผิดพลาดในส่วนของเรา
       title: หน้านี้ไม่ถูกต้อง
-    '503': The page could not be served due to a temporary server failure.
+    '503': ไม่สามารถให้บริการหน้าได้เนื่องจากเซิร์ฟเวอร์ล้มเหลวชั่วคราว
   existing_username_validator:
     not_found: ไม่พบผู้ใช้ในเซิร์ฟเวอร์ที่มีชื่อผู้ใช้นั้น
     not_found_multiple: ไม่พบ %{usernames}
@@ -876,10 +937,13 @@ th:
     changes_saved_msg: บันทึกการเปลี่ยนแปลงสำเร็จ!
     copy: คัดลอก
     delete: ลบ
+    none: ไม่มี
     order_by: เรียงลำดับตาม
     save_changes: บันทึกการเปลี่ยนแปลง
+    today: วันนี้
   html_validator:
     invalid_markup: 'มีมาร์กอัป HTML ที่ไม่ถูกต้อง: %{error}'
+<<<<<<< HEAD
   identity_proofs:
     active: ใช้งานอยู่
     authorize: ใช่ อนุญาต
@@ -895,6 +959,8 @@ th:
     removed: เอาการพิสูจน์ออกจากบัญชีสำเร็จ
     status: สถานะการตรวจสอบ
     view_proof: ดูการพิสูจน์
+=======
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   imports:
     errors:
       over_rows_processing_limit: มีมากกว่า %{count} แถว
@@ -926,12 +992,12 @@ th:
     generate: สร้างลิงก์เชิญ
     invited_by: 'คุณได้รับเชิญโดย:'
     max_uses:
-      other: "%{count} การใช้"
+      other: "%{count} การใช้งาน"
     max_uses_prompt: ไม่มีขีดจำกัด
     prompt: สร้างและแบ่งปันลิงก์กับผู้อื่นเพื่ออนุญาตให้เข้าถึงเซิร์ฟเวอร์นี้
     table:
       expires_at: หมดอายุเมื่อ
-      uses: การใช้
+      uses: การใช้งาน
     title: เชิญผู้คน
   login_activities:
     authentication_methods:
@@ -1002,6 +1068,8 @@ th:
       body: 'คุณได้รับการกล่าวถึงโดย %{name} ใน:'
       subject: คุณได้รับการกล่าวถึงโดย %{name}
       title: การกล่าวถึงใหม่
+    poll:
+      subject: การสำรวจความคิดเห็นโดย %{name} ได้สิ้นสุดแล้ว
     reblog:
       body: 'โพสต์ของคุณได้รับการดันโดย %{name}:'
       subject: "%{name} ได้ดันโพสต์ของคุณ"
@@ -1097,9 +1165,17 @@ th:
       generic: เบราว์เซอร์ที่ไม่รู้จัก
       ie: Internet Explorer
       micro_messenger: MicroMessenger
+<<<<<<< HEAD
       opera: Opera
       otter: Otter
       phantom_js: PhantomJS
+=======
+      nokia: เบราว์เซอร์ Nokia S40 Ovi
+      opera: Opera
+      otter: Otter
+      phantom_js: PhantomJS
+      qq: เบราว์เซอร์ QQ
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       safari: Safari
       weibo: Weibo
     current_session: เซสชันปัจจุบัน
@@ -1133,7 +1209,6 @@ th:
     edit_profile: แก้ไขโปรไฟล์
     export: การส่งออกข้อมูล
     featured_tags: แฮชแท็กที่แนะนำ
-    identity_proofs: การพิสูจน์ตัวตน
     import: การนำเข้า
     import_and_export: การนำเข้าและการส่งออก
     migrate: การโยกย้ายบัญชี
@@ -1157,11 +1232,11 @@ th:
     content_warning: 'คำเตือนเนื้อหา: %{warning}'
     disallowed_hashtags:
       other: 'มีแฮชแท็กที่ไม่อนุญาต: %{tags}'
+    edited_at: แก้ไขเมื่อ %{date}
     language_detection: ตรวจหาภาษาโดยอัตโนมัติ
     open_in_web: เปิดในเว็บ
     pin_errors:
       ownership: ไม่สามารถปักหมุดโพสต์ของคนอื่น
-      private: ไม่สามารถปักหมุดโพสต์ที่ไม่เป็นสาธารณะ
       reblog: ไม่สามารถปักหมุดการดัน
     poll:
       total_people:
@@ -1209,6 +1284,12 @@ th:
       '5259492': 2 เดือน
       '63113904': 2 ปี
       '7889238': 3 เดือน
+<<<<<<< HEAD
+=======
+    min_age_label: ค่าเกณฑ์อายุ
+    min_favs: เก็บโพสต์ที่ได้รับการชื่นชอบอย่างน้อย
+    min_reblogs: เก็บโพสต์ที่ได้รับการดันอย่างน้อย
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   stream_entries:
     pinned: โพสต์ที่ปักหมุด
     reblogged: ดันแล้ว
@@ -1225,6 +1306,7 @@ th:
     formats:
       default: "%d %b %Y, %H:%M"
       month: "%b %Y"
+      time: "%H:%M"
   two_factor_authentication:
     add: เพิ่ม
     disable: ปิดใช้งาน 2FA
@@ -1241,6 +1323,7 @@ th:
   user_mailer:
     backup_ready:
       subject: การเก็บถาวรของคุณพร้อมสำหรับการดาวน์โหลดแล้ว
+      title: การส่งออกการเก็บถาวร
     sign_in_token:
       details: 'นี่คือรายละเอียดของความพยายาม:'
       explanation: 'เราตรวจพบความพยายามลงชื่อเข้าบัญชีของคุณจากที่อยู่ IP ที่ไม่รู้จัก หากนี่คือคุณ โปรดป้อนรหัสความปลอดภัยด้านล่างในหน้าตรวจสอบการลงชื่อเข้า:'
@@ -1248,10 +1331,19 @@ th:
       subject: โปรดยืนยันการลงชื่อเข้าที่พยายาม
       title: ความพยายามลงชื่อเข้า
     warning:
+<<<<<<< HEAD
       get_in_touch: คุณสามารถตอบกลับอีเมลนี้เพื่อติดต่อกับพนักงานของ %{instance}
+=======
+      categories:
+        spam: สแปม
+      reason: 'เหตุผล:'
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       review_server_policies: ตรวจทานนโยบายของเซิร์ฟเวอร์
       subject:
+        disable: บัญชีของคุณ %{acct} ถูกอายัด
         none: คำเตือนสำหรับ %{acct}
+        silence: บัญชีของคุณ %{acct} ถูกจำกัด
+        suspend: บัญชีของคุณ %{acct} ถูกระงับ
       title:
         disable: อายัดบัญชีอยู่
         none: คำเตือน
@@ -1277,6 +1369,7 @@ th:
     otp_lost_help_html: หากคุณสูญเสียการเข้าถึงทั้งสองอย่าง คุณสามารถติดต่อ %{email}
     seamless_external_login: คุณได้เข้าสู่ระบบผ่านบริการภายนอก ดังนั้นจึงไม่มีการตั้งค่ารหัสผ่านและอีเมล
     signed_in_as: 'ลงชื่อเข้าเป็น:'
+    suspicious_sign_in_confirmation: ดูเหมือนว่าคุณไม่เคยเข้าสู่ระบบจากอุปกรณ์นี้มาก่อน ดังนั้นเราจึงส่งรหัสความปลอดภัยไปยังที่อยู่อีเมลของคุณเพื่อยืนยันว่าเป็นคุณ
   verification:
     verification: การตรวจสอบ
   webauthn_credentials:

@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+  "account.account_note_header": "Opombe",
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
   "account.add_or_remove_from_list": "Dodaj ali odstrani iz seznama",
   "account.badges.bot": "Robot",
   "account.block": "Blokiraj @{name}",
@@ -246,7 +250,6 @@
   "notifications.column_settings.favourite": "Priljubljeni:",
   "notifications.column_settings.filter_bar.advanced": "Prikaži vse kategorije",
   "notifications.column_settings.filter_bar.category": "Vrstica za hitro filtriranje",
-  "notifications.column_settings.filter_bar.show": "Pokaži",
   "notifications.column_settings.follow": "Novi sledilci:",
   "notifications.column_settings.mention": "Omembe:",
   "notifications.column_settings.poll": "Rezultati glasovanja:",

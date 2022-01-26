@@ -5,15 +5,32 @@ ro:
         expires_at: Termen limită
         options: Alegeri
       user:
+<<<<<<< HEAD
         email: Adresă e-mail
         password: Parolă
+=======
+        agreement: Acord de servicii
+        email: Adresă e-mail
+        locale: Localizare
+        password: Parolă
+      user/account:
+        username: Nume utilizator
+      user/invite_request:
+        text: Motiv
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
     errors:
       models:
         account:
           attributes:
             username:
               invalid: doar litere, numere și sublinieri
+              reserved: este rezervat
         status:
           attributes:
             reblog:
-              taken: de stare există deja
+              taken: de postare există deja
+        user:
+          attributes:
+            email:
+              blocked: utilizează un furnizor de e-mail neautorizat
+              unreachable: pare să nu existe

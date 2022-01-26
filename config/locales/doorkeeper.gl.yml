@@ -137,12 +137,21 @@ gl:
       "read:notifications": ver as notificacións
       "read:reports": ver as túas denuncias
       "read:search": buscar no teu nome
+<<<<<<< HEAD
       "read:statuses": ver todos os estados
       write: modificar todos os datos da tua conta
       "write:accounts": modificar o teu perfil
       "write:blocks": bloquear contas e dominios
       "write:bookmarks": marcar os estados
       "write:favourites": estados favoritos
+=======
+      "read:statuses": ver todas as publicacións
+      write: modificar todos os datos da tua conta
+      "write:accounts": modificar o teu perfil
+      "write:blocks": bloquear contas e dominios
+      "write:bookmarks": marcar publicacións
+      "write:favourites": publicacións favoritas
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
       "write:filters": crear filtros
       "write:follows": seguir usuarias
       "write:lists": crear listaxes
@@ -150,4 +159,8 @@ gl:
       "write:mutes": acalar usuarias e conversas
       "write:notifications": eliminar as notificacións
       "write:reports": denunciar usuarias
+<<<<<<< HEAD
       "write:statuses": publicar estados
+=======
+      "write:statuses": publicar
+>>>>>>> 23ec28139857bddfe0aa42f81ab14362a458876a
