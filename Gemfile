@@ -85,7 +85,7 @@ gem 'simple-navigation', '~> 4.3'
 gem 'simple_form', '~> 5.1'
 gem 'sprockets-rails', '~> 3.4', require: 'sprockets/railtie'
 gem 'stoplight', '~> 2.2.1'
-gem 'strong_migrations', '~> 0.7'
+gem 'strong_migrations', '~> 0.8'
 gem 'tty-prompt', '~> 0.23', require: false
 gem 'twitter-text', '~> 3.1.0'
 gem 'tzinfo-data', '~> 1.2021'
@@ -103,7 +103,7 @@ group :development, :test do
   gem 'i18n-tasks', '~> 0.9', require: false
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3'
-  gem 'rspec-rails', '~> 5.0'
+  gem 'rspec-rails', '~> 5.1'
 end
 
 group :production, :test do
@@ -124,7 +124,7 @@ end
 
 group :development do
   gem 'active_record_query_trace', '~> 1.8'
-  gem 'annotate', '~> 3.1'
+  gem 'annotate', '~> 3.2'
   gem 'better_errors', '~> 2.9'
   gem 'binding_of_caller', '~> 1.0'
   gem 'bullet', '~> 7.0'
