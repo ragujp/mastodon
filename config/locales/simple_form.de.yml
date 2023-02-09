@@ -18,8 +18,8 @@ de:
           disable: Benutzer*in daran hindern, das Konto verwenden zu können, aber die Inhalte nicht löschen oder ausblenden.
           none: Verwende dies, um dem Account eine Warnung zu schicken, ohne dabei eine andere Aktion vorzunehmen.
           sensitive: Erzwingen, dass alle Medienanhänge dieses Profils mit einer Inhaltswarnung versehen werden.
-          silence: Verhindern, dass der Benutzer in der Lage ist, mit der öffentlichen Sichtbarkeit zu posten und seine Beiträge und Benachrichtigungen vor Personen zu verbergen, die ihm nicht folgen.
-          suspend: Verhindert jegliche Interaktion von oder zu diesem Konto und löscht dessen Inhalt. Kann innerhalb von 30 Tagen rückgängig gemacht werden.
+          silence: Verhindert, dass dieses Profil öffentlich sichtbare Beiträge verfassen kann, und verbirgt alle Beiträge und Benachrichtigungen vor Personen, die diesem Profil nicht folgen. Alle Meldungen zu diesem Konto werden geschlossen.
+          suspend: Verhindert jegliche Interaktion von oder zu diesem Konto und löscht dessen Inhalt. Dies kann innerhalb von 30 Tagen rückgängig gemacht werden. Alle Meldungen zu diesem Konto werden geschlossen.
         warning_preset_id: Optional. Du kannst immer noch eigenen Text an das Ende der Vorlage hinzufügen
       announcement:
         all_day: Falls aktiviert, werden nur der Tag bzw. die Tage innerhalb des Zeitraums angezeigt
@@ -74,6 +74,7 @@ de:
           hide: Den gefilterten Beitrag vollständig ausblenden, als hätte er nie existiert
           warn: Den gefilterten Beitrag hinter einer Warnung, die den Filtertitel beinhaltet, ausblenden
       form_admin_settings:
+        activity_api_enabled: Anzahl der lokal veröffentlichten Beiträge, der aktiven Benutzer*innen und neuen Registrierungen in wöchentlichen Abständen
         backups_retention_period: Behalte die Archive, die von den Benutzer*innen erstellt worden sind, für die angegebene Anzahl an Tagen.
         bootstrap_timeline_accounts: Diese Profile werden bei den Follower-Empfehlungen für neu registrierte Nutzer*innen oben angeheftet.
         closed_registrations_message: Wird angezeigt, wenn Registrierungen deaktiviert sind
@@ -81,6 +82,7 @@ de:
         custom_css: Du kannst benutzerdefinierte Stile auf die Web-Version von Mastodon anwenden.
         mascot: Überschreibt die Abbildung in der erweiterten Weboberfläche.
         media_cache_retention_period: Von anderen Instanzen übertragene Mediendateien werden nach der angegebenen Anzahl an Tagen – sofern das Feld eine positive Zahl enthält – aus dem Cache gelöscht und bei Bedarf erneut heruntergeladen.
+        peers_api_enabled: Eine Liste von Domainnamen, die diesem Server im Fediverse begegnet sind. Hier werden keine Angaben darüber gemacht, ob du mit einem bestimmten Server föderierst, sondern nur, dass dein Server davon weiß. Dies wird von Diensten verwendet, die Statistiken über Föderation im allgemeinen Sinne sammeln.
         profile_directory: Das Profilverzeichnis zeigt alle Benutzer*innen an, die sich dafür entschieden haben, entdeckt zu werden.
         require_invite_text: Wenn Registrierungen eine manuelle Genehmigung erfordern, dann werden Nutzer einen Grund für ihre Registrierung angeben müssen
         site_contact_email: Wie man dich bei rechtlichen oder Support-Anfragen erreichen kann.
@@ -89,11 +91,13 @@ de:
         site_short_description: Eine kurze Beschreibung zur eindeutigen Identifizierung des Servers. Wer betreibt ihn, für wen ist er bestimmt?
         site_terms: Verwende eine eigene Datenschutzerklärung oder lasse das Feld leer, um die allgemeine Vorlage zu verwenden. Kann mit der Markdown-Syntax formatiert werden.
         site_title: Wie Personen neben dem Domainnamen auf deinen Server verweisen können.
+        status_page_url: URL einer Seite, auf der der Status des Servers während eines Ausfalls angezeigt werden kann
         theme: Das Design, das abgemeldete Besucher und neue Benutzer sehen.
         thumbnail: Ein Bild ungefähr im 2:1-Format, das neben den Server-Informationen angezeigt wird.
         timeline_preview: Besucher*innen und ausgeloggte Benutzer*innen können die neuesten öffentlichen Beiträge dieses Servers aufrufen.
         trendable_by_default: Manuelles Überprüfen angesagter Inhalte überspringen. Einzelne Elemente können später noch aus den Trends entfernt werden.
         trends: Trends zeigen, welche Beiträge, Hashtags und Nachrichten auf deinem Server immer beliebter werden.
+        trends_as_landing_page: Dies zeigt nicht angemeldeten Personen Trendinhalte anstelle einer Beschreibung des Servers an. Erfordert, dass Trends aktiviert sind.
       form_challenge:
         current_password: Du betrittst einen gesicherten Bereich
       imports:
@@ -113,7 +117,7 @@ de:
         text: Führe eine Regel oder Bedingung für Benutzer*innen auf diesem Server ein. Bleib dabei kurz und knapp
       sessions:
         otp: 'Gib den Zwei-Faktor-Code von deinem Telefon ein oder benutze einen deiner Wiederherstellungscodes:'
-        webauthn: Wenn es sich um einen USB-Schlüssel handelt, stelle sicher, dass du ihn einsteckst und ihn antippst.
+        webauthn: Wenn es sich um einen USB-Schlüssel handelt, vergewissere dich, dass du ihn einsteckst und ihn, wenn notwendig, antippst.
       tag:
         name: Du kannst zum Beispiel nur die Groß- und Kleinschreibung der Buchstaben ändern, um es lesbarer zu machen
       user:
@@ -200,7 +204,7 @@ de:
         setting_disable_swiping: Wischgesten deaktivieren
         setting_display_media: Medien-Anzeige
         setting_display_media_default: Standard
-        setting_display_media_hide_all: Alle Medien verstecken
+        setting_display_media_hide_all: Alle Medien verbergen
         setting_display_media_show_all: Alle Medien anzeigen
         setting_expand_spoilers: Beiträge mit Inhaltswarnung immer ausklappen
         setting_hide_network: Deine Follower und „Folge ich“ nicht anzeigen
@@ -229,6 +233,7 @@ de:
           hide: Komplett ausblenden
           warn: Mit einer Warnung ausblenden
       form_admin_settings:
+        activity_api_enabled: Veröffentlichung von Gesamtstatistiken über Nutzeraktivitäten in der API
         backups_retention_period: Aufbewahrungsfrist für Archive
         bootstrap_timeline_accounts: Neuen Nutzern immer diese Konten empfehlen
         closed_registrations_message: Nachricht, falls Registrierungen deaktiviert sind
@@ -236,22 +241,25 @@ de:
         custom_css: Eigenes CSS
         mascot: Benutzerdefiniertes Maskottchen (Legacy)
         media_cache_retention_period: Aufbewahrungsfrist für den Medien-Cache
+        peers_api_enabled: Veröffentliche Liste bekannter Server in der API
         profile_directory: Profilverzeichnis aktivieren
         registrations_mode: Wer darf ein neues Konto registrieren?
         require_invite_text: Grund für den Beitritt verlangen
         show_domain_blocks: Anzeigen, welche Domains gesperrt wurden
         show_domain_blocks_rationale: Anzeigen, weshalb Domains gesperrt wurden
         site_contact_email: E-Mail-Adresse
-        site_contact_username: Kontakt Benutzername
+        site_contact_username: Profilname
         site_extended_description: Detaillierte Beschreibung
         site_short_description: Serverbeschreibung
         site_terms: Datenschutzerklärung
         site_title: Servername
+        status_page_url: URL der Statusseite
         theme: Standard-Design
         thumbnail: Vorschaubild des Servers
         timeline_preview: Nicht-authentifizierten Zugriff auf die öffentliche Timeline gestatten
         trendable_by_default: Trends ohne vorherige Überprüfung erlauben
         trends: Trends aktivieren
+        trends_as_landing_page: Trends als Landingpage verwenden
       interactions:
         must_be_follower: Benachrichtigungen von Profilen verbergen, die mir nicht folgen
         must_be_following: Benachrichtigungen von Profilen verbergen, denen ich nicht folge

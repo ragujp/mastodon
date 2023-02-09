@@ -423,7 +423,7 @@ body > [data-popper-placement] {
 
       &.active {
         border-color: $highlight-text-color;
-        background: $highlight-text-color;
+        background: $highlight-text-color url("data:image/svg+xml;utf8,<svg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M4.5 8.5L8 12l6-6' stroke='white' stroke-width='1.5'/></svg>") center center no-repeat;
       }
     }
   }
@@ -4441,14 +4441,14 @@ a.status-card.compact:hover {
   align-items: center;
   background: rgba($base-overlay-background, 0.8);
   display: flex;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   left: 0;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   visibility: hidden;
-  width: 100%;
+  width: 100vw;
   z-index: 2000;
 
   * {
@@ -5798,6 +5798,7 @@ a.status-card.compact:hover {
   &__container {
     padding: 30px;
     pointer-events: all;
+    overflow-y: auto;
   }
 
   .status__content {
