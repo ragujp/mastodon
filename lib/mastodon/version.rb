@@ -13,15 +13,15 @@ module Mastodon
     end
 
     def patch
-      0
+      2
     end
 
     def flags
-      'rc3'
+      ENV.fetch('MASTODON_VERSION_FLAGS', '')
     end
 
     def suffix
-      ''
+      ENV.fetch('MASTODON_VERSION_SUFFIX', '')
     end
 
     def to_a
