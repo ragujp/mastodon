@@ -71,9 +71,4 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: ${{ github.repository == 'mastodon/mastodon' && github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
-<<<<<<< HEAD
-=======
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
->>>>>>> 140aa6b054bb73b10a33bda17090453dd550267a
