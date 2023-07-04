@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'main'
+      - '*'
     tags:
       - '*'
   pull_request:
@@ -16,10 +16,6 @@ permissions:
 jobs:
   build-image:
     runs-on: ubuntu-latest
-
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
 
     steps:
       - uses: actions/checkout@v3
@@ -51,16 +47,15 @@ jobs:
           flavor: |
             latest=auto
           tags: |
-            type=edge,branch=main
+            type=edge,branch=${{ github.ref_name }}
             type=pep440,pattern={{raw}}
             type=pep440,pattern=v{{major}}.{{minor}}
             type=ref,event=pr
 
       - name: Generate version suffix
         id: version_vars
-        if: github.repository == 'mastodon/mastodon' && github.event_name == 'push' && github.ref_name == 'main'
         run: |
-          echo mastodon_version_suffix=+edge-$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
+          echo mastodon_version_suffix=+edge-$(git rev-parse --short HEAD)-${{ github.ref_name }} >> $GITHUB_OUTPUT
 
       - uses: docker/build-push-action@v4
         with:
