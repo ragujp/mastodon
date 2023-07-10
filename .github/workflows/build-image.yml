@@ -44,8 +44,10 @@ jobs:
           images: |
             raguchan/mastodon
             ghcr.io/ragujp/mastodon
+          # Only tag with latest when ran against the latest stable branch
+          # This needs to be updated after each minor version release
           flavor: |
-            latest=auto
+            latest=${{ startsWith(github.ref, 'refs/tags/v4.1.') && 'auto' || 'false' }}
           tags: |
             type=edge,branch=${{ github.ref_name }}
             type=pep440,pattern={{raw}}
