@@ -25,6 +25,7 @@ jobs:
     needs: compute-suffix
     uses: ./.github/workflows/build-container-image.yml
     with:
+      file_to_build: Dockerfile
       platforms: linux/amd64,linux/arm64
       use_native_arm64_builder: false
       cache: false
@@ -32,6 +33,28 @@ jobs:
         raguchan/mastodon
         ghcr.io/ragujp/mastodon
       # The `-` is important here, result will be v4.1.2-nightly.2022-03-05
+      version_prerelease: ${{ needs.compute-suffix.outputs.prerelease }}
+      labels: |
+        org.opencontainers.image.description=Nightly build image used for testing purposes
+      flavor: |
+        latest=auto
+      tags: |
+        type=raw,value=edge
+        type=raw,value=nightly
+        type=schedule,pattern=${{ needs.compute-suffix.outputs.prerelease }}
+    secrets: inherit
+
+  build-image-streaming:
+    needs: compute-suffix
+    uses: ./.github/workflows/build-container-image.yml
+    with:
+      file_to_build: streaming/Dockerfile
+      platforms: linux/amd64,linux/arm64
+      use_native_arm64_builder: true
+      cache: false
+      push_to_images: |
+        tootsuite/mastodon-streaming
+        ghcr.io/mastodon/mastodon-streaming
       version_prerelease: ${{ needs.compute-suffix.outputs.prerelease }}
       labels: |
         org.opencontainers.image.description=Nightly build image used for testing purposes
