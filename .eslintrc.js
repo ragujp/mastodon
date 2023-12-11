@@ -120,7 +120,6 @@ module.exports = defineConfig({
     'react/jsx-uses-react': 'off', // not needed with new JSX transform
     'react/jsx-wrap-multilines': 'error',
     'react/no-deprecated': 'off',
-    'react/no-unknown-property': 'off',
     'react/react-in-jsx-scope': 'off', // not needed with new JSX transform
     'react/self-closing-comp': 'error',
 
@@ -284,7 +283,6 @@ module.exports = defineConfig({
     'formatjs/no-id': 'off', // IDs are used for translation keys
     'formatjs/no-invalid-icu': 'error',
     'formatjs/no-literal-string-in-jsx': 'off', // Should be looked at, but mainly flagging punctuation outside of strings
-    'formatjs/no-multiple-plurals': 'off', // Only used by hashtag.jsx
     'formatjs/no-multiple-whitespaces': 'error',
     'formatjs/no-offset': 'error',
     'formatjs/no-useless-message': 'error',
@@ -354,7 +352,7 @@ module.exports = defineConfig({
         '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
         '@typescript-eslint/consistent-type-exports': 'error',
         '@typescript-eslint/consistent-type-imports': 'error',
-        "@typescript-eslint/prefer-nullish-coalescing": ['error', {ignorePrimitives: {boolean: true}}],
+        "@typescript-eslint/prefer-nullish-coalescing": ['error', { ignorePrimitives: { boolean: true } }],
 
         'jsdoc/require-jsdoc': 'off',
 
