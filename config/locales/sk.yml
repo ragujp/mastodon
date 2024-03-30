@@ -198,11 +198,14 @@ sk:
         destroy_ip_block: Vymaž IP pravidlo
         destroy_status: Vymaž príspevok
         destroy_unavailable_domain: Vymaž nedostupnú doménu
+        destroy_user_role: Zničiť rolu
         disable_2fa_user: Vypni dvoj-faktorové overovanie
         disable_custom_emoji: Vypni vlastné emotikony
+        disable_sign_in_token_auth_user: Zakázať používateľom overovanie e-mailovým tokenom
         disable_user: Deaktivuj užívateľa
         enable_custom_emoji: Povoľ vlastné emotikony
         enable_user: Povoľ užívateľa
+        memorialize_account: Zmena na „in memoriam“
         promote_user: Povýš užívateľskú rolu
         reject_appeal: Zamietni námietku
         reject_user: Zamietni užívateľa
@@ -447,10 +450,13 @@ sk:
         instance_statuses_measure: uložené príspevky
       delivery:
         all: Všetko
+        clear: Vymazať chyby doručovania
         failing: Zlyhávajúce
+        restart: Reštartovať doručovanie
         stop: Zastav doručenie
         unavailable: Nedostupné
       delivery_available: Je v dosahu doručovania
+      delivery_error_days: Dni chybného doručovania
       empty: Nenájdené žiadne domény.
       moderation:
         all: Všetky
@@ -579,6 +585,7 @@ sk:
         administration: Spravovanie
         invites: Pozvánky
         moderation: Moderácia
+        special: Špeciálne
       delete: Vymaž
       edit: Uprav postavenie %{name}
       everyone: Východzie oprávnenia
@@ -798,6 +805,7 @@ sk:
     confirmations:
       clicking_this_link: kliknutím na tento odkaz
       login_link: prihlás sa
+      proceed_to_login_html: Teraz môžeš pokračovať na %{login_link}.
       welcome_title: Vitaj, %{name}!
     delete_account: Vymaž účet
     delete_account_html: Pokiaľ chceš svoj účet odtiaľto vymazať, môžeš tak <a href="%{path}">urobiť tu</a>. Budeš požiadaný/á o potvrdenie tohto kroku.
@@ -816,6 +824,7 @@ sk:
     or_log_in_with: Alebo prihlás s
     progress:
       confirm: Potvrď email
+      details: Tvoje údaje
       rules: Súhlas s pravidlami
     register: Zaregistruj sa
     registration_closed: "%{instance} neprijíma nových členov"
@@ -877,6 +886,7 @@ sk:
       username_unavailable: Tvoja prezývka ostane neprístupná
   disputes:
     strikes:
+      action_taken: Vykonaný zákrok
       appeal: Namietni
       appeals:
         submit: Pošli námietku
@@ -1188,11 +1198,14 @@ sk:
     import: Importuj
     import_and_export: Import a export
     migrate: Presuň účet
-    notifications: Oboznámenia
+    notifications: Emailové upozornenia
     preferences: Voľby
     profile: Profil
     relationships: Sledovania a následovatelia
     two_factor_authentication: Dvojfázové overenie
+  severed_relationships:
+    lost_followers: Stratení nasledovatelia
+    lost_follows: Stratené sledovania
   statuses:
     attached:
       description: 'Priložené: %{attached}'

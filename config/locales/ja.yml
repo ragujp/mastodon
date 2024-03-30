@@ -585,6 +585,9 @@ ja:
       actions_description_html: このレポートを解決するために取るアクションを決定します。 報告されたアカウントに対して懲罰的な措置を取った場合、メール通知が送信されますが<strong>スパム</strong>カテゴリが選択されている場合を除きます。
       actions_description_remote_html: この通報を解決するためのアクションを選択してください。これは<strong>あなたの</strong>サーバーがこのリモートアカウントと通信し、そのコンテンツを処理する時のみ影響します。
       add_to_report: 通報にさらに追加
+      already_suspended_badges:
+        local: このサーバーで停止済み
+        remote: リモートのサーバーで停止済み
       are_you_sure: 本当に実行しますか？
       assign_to_self: 担当になる
       assigned: 担当者
@@ -1626,7 +1629,6 @@ ja:
     import: データのインポート
     import_and_export: インポート・エクスポート
     migrate: アカウントの引っ越し
-    notifications: 通知
     preferences: ユーザー設定
     profile: プロフィール
     relationships: フォロー・フォロワー
@@ -1665,8 +1667,6 @@ ja:
         other: "%{count}票"
       vote: 投票
     show_more: もっと見る
-    show_newer: 新しいものを表示
-    show_older: 古いものを表示
     show_thread: スレッドを表示
     title: '%{name}: "%{quote}"'
     visibilities:
@@ -1835,7 +1835,6 @@ ja:
       follows_subtitle: 人気アカウントをフォロー
       follows_title: フォローを増やしてみませんか？
       follows_view_more: フォローするユーザーを探す
-      hashtags_recent_count: "%{days} 日間で %{people} 人が共有"
       hashtags_subtitle: 過去2日間のトレンドを見る
       hashtags_title: トレンドのハッシュタグ
       hashtags_view_more: トレンドのハッシュタグをもっと見る
