@@ -1,0 +1,85 @@
+version: 2.1
+
+executors:
+  amd64:
+    machine:
+      image: ubuntu-2004:2023.07.1
+      docker_layer_caching: true
+    resource_class: medium
+    environment:
+      DOCKER_BUILDKIT: 1
+  arm64:
+    machine:
+      image: ubuntu-2004:2023.07.1
+      docker_layer_caching: true
+    resource_class: arm.medium
+    environment:
+      DOCKER_BUILDKIT: 1
+
+commands:
+  build:
+    parameters:
+      arch:
+        type: string
+    steps:
+      - checkout
+      - run:
+          name: Build a container
+          command: |
+            if [ "$GITHUB_USERNAME$GITHUB_TOKEN" ]
+             then
+             echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
+             docker build -t ghcr.io/$GITHUB_USERNAME/mastodon:nightly .
+             docker tag ghcr.io/$GITHUB_USERNAME/mastodon:nightly ghcr.io/$GITHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+             docker push ghcr.io/$GITHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+             echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
+             docker build -t $DOCKERHUB_USERNAME/mastodon:latest .
+             docker tag $DOCKERHUB_USERNAME/mastodon:nightly $DOCKERHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+             docker push $DOCKERHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+            else
+             echo -e '\033[0;33mAborted deploying to Docker Hub\033[0;39m'
+            fi
+
+jobs:
+  build_amd64:
+    executor: amd64
+    steps:
+      - build:
+          arch: amd64
+  build_arm64:
+    executor: arm64
+    steps:
+      - build:
+          arch: arm64
+  deploy:
+    executor: amd64
+    steps:
+     - run:
+        name: "Create manifest"
+        command: |
+          echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
+          docker manifest create ghcr.io/$GITHUB_USERNAME/mastodon:nightly \
+            --amend ghcr.io/$GITHUB_USERNAME/mastodon:amd64-${CIRCLE_SHA1} \
+            --amend ghcr.io/$GITHUB_USERNAME/mastodon:arm64-${CIRCLE_SHA1}
+          echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
+          docker manifest create $DOCKERHUB_USERNAME/mastodon:latest \
+            --amend $DOCKERHUB_USERNAME/mastodon:amd64-${CIRCLE_SHA1} \
+            --amend $DOCKERHUB_USERNAME/mastodon:arm64-${CIRCLE_SHA1}
+     - run:
+        name: "Push manifest (Github container registry)"
+        command: |
+          docker manifest push ghcr.io/$GITHUB_USERNAME/mastodon:nightly
+     - run:
+        name: "Push manifest (DockerHub)"
+        command: |
+          docker manifest push $DOCKERHUB_USERNAME/mastodon:nightly
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build_amd64
+      - build_arm64
+      - deploy:
+          requires:
+            - build_amd64
+            - build_arm64
