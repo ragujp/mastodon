@@ -24,20 +24,21 @@ commands:
     steps:
       - checkout
       - run:
-          name: Build a container
+          name: Build and Tag Docker Image
           command: |
-            if [ "$GITHUB_USERNAME$GITHUB_TOKEN" ]
-             then
-             echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
-             docker build -t ghcr.io/$GITHUB_USERNAME/mastodon:nightly .
-             docker tag ghcr.io/$GITHUB_USERNAME/mastodon:nightly ghcr.io/$GITHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
-             docker push ghcr.io/$GITHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
-             echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
-             docker build -t $DOCKERHUB_USERNAME/mastodon:latest .
-             docker tag $DOCKERHUB_USERNAME/mastodon:nightly $DOCKERHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
-             docker push $DOCKERHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+            if [ -n "$GITHUB_USERNAME" ] && [ -n "$GITHUB_TOKEN" ]; then
+              echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
+              docker build -t ghcr.io/$GITHUB_USERNAME/mastodon:nightly -t ghcr.io/$GITHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1} .
+              docker push ghcr.io/$GITHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
             else
-             echo -e '\033[0;33mAborted deploying to Docker Hub\033[0;39m'
+              echo -e '\033[0;33mSkipping GHCR upload due to missing credentials\033[0;39m'
+            fi
+            if [ -n "$DOCKERHUB_USERNAME" ] && [ -n "$DOCKERHUB_PASSWORD" ]; then
+              echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
+              docker tag ghcr.io/$GITHUB_USERNAME/mastodon:nightly $DOCKERHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+              docker push $DOCKERHUB_USERNAME/mastodon:<< parameters.arch >>-${CIRCLE_SHA1}
+            else
+              echo -e '\033[0;33mSkipping Docker Hub upload due to missing credentials\033[0;39m'
             fi
 
 jobs:
@@ -54,25 +55,31 @@ jobs:
   deploy:
     executor: amd64
     steps:
-     - run:
-        name: "Create manifest"
-        command: |
-          echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
-          docker manifest create ghcr.io/$GITHUB_USERNAME/mastodon:nightly \
-            --amend ghcr.io/$GITHUB_USERNAME/mastodon:amd64-${CIRCLE_SHA1} \
-            --amend ghcr.io/$GITHUB_USERNAME/mastodon:arm64-${CIRCLE_SHA1}
-          echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
-          docker manifest create $DOCKERHUB_USERNAME/mastodon:latest \
-            --amend $DOCKERHUB_USERNAME/mastodon:amd64-${CIRCLE_SHA1} \
-            --amend $DOCKERHUB_USERNAME/mastodon:arm64-${CIRCLE_SHA1}
-     - run:
-        name: "Push manifest (Github container registry)"
-        command: |
-          docker manifest push ghcr.io/$GITHUB_USERNAME/mastodon:nightly
-     - run:
-        name: "Push manifest (DockerHub)"
-        command: |
-          docker manifest push $DOCKERHUB_USERNAME/mastodon:nightly
+      - run:
+          name: Create and Push Manifest (GitHub Container Registry)
+          command: |
+            if [ -n "$GITHUB_USERNAME" ] && [ -n "$GITHUB_TOKEN" ]; then
+              echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
+              docker manifest create ghcr.io/$GITHUB_USERNAME/mastodon:nightly \
+                --amend ghcr.io/$GITHUB_USERNAME/mastodon:amd64-${CIRCLE_SHA1} \
+                --amend ghcr.io/$GITHUB_USERNAME/mastodon:arm64-${CIRCLE_SHA1}
+              docker manifest push ghcr.io/$GITHUB_USERNAME/mastodon:nightly
+            else
+              echo -e '\033[0;33mSkipping GHCR manifest push due to missing credentials\033[0;39m'
+            fi
+      - run:
+          name: Create and Push Manifest (DockerHub)
+          command: |
+            if [ -n "$DOCKERHUB_USERNAME" ] && [ -n "$DOCKERHUB_PASSWORD" ]; then
+              echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
+              docker manifest create $DOCKERHUB_USERNAME/mastodon:nightly \
+                --amend $DOCKERHUB_USERNAME/mastodon:amd64-${CIRCLE_SHA1} \
+                --amend $DOCKERHUB_USERNAME/mastodon:arm64-${CIRCLE_SHA1}
+              docker manifest push $DOCKERHUB_USERNAME/mastodon:nightly
+            else
+              echo -e '\033[0;33mSkipping DockerHub manifest push due to missing credentials\033[0;39m'
+            fi
+
 workflows:
   version: 2
   build_and_deploy:
